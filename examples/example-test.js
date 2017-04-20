@@ -4,35 +4,35 @@ function example() {
 
 var tasks = [
 
-{"startDate":new Date(1951, 3, 0),"endDate":new Date(1956, 6, 12),"taskName":"RnB","status":"RUNNING"},
-{"startDate":new Date(1956, 6, 12),"endDate":new Date(1966, 0, 0),"taskName":"RnB","status":"SUCCEEDED"},
-{"startDate":new Date(1966, 0, 0),"endDate":new Date(1976, 0, 0),"taskName":"RnB","status":"FAILED"},
-{"startDate":new Date(1976, 0, 0),"endDate":new Date(1986, 0, 0),"taskName":"RnB","status":"KILLED"},
+{"startDate":new Date(1939, 0, 0),"endDate":new Date(1946, 0, 0),"taskName":"RnB","status":"RUNNING"},
+{"startDate":new Date(1946, 0, 0),"endDate":new Date(1956, 6, 12),"taskName":"RnB","status":"KILLED"},
+{"startDate":new Date(1956, 6, 12),"endDate":new Date(1965, 5, 5),"taskName":"RnB","status":"FAILED"},
+{"startDate":new Date(1965, 5, 5),"endDate":new Date(1977, 7, 1),"taskName":"RnB","status":"SUCCEEDED"},
 
 {"startDate":new Date(1951, 3, 0),"endDate":new Date(1956, 6, 12),"taskName":"RnR","status":"RUNNING"},
-{"startDate":new Date(1956, 6, 12),"endDate":new Date(1966, 0, 0),"taskName":"RnR","status":"SUCCEEDED"},
-{"startDate":new Date(1966, 0, 0),"endDate":new Date(1976, 1, 0),"taskName":"RnR","status":"FAILED"},
-{"startDate":new Date(1976, 1, 0),"endDate":new Date(1986, 0, 0),"taskName":"RnR","status":"KILLED"},
+{"startDate":new Date(1956, 6, 12),"endDate":new Date(1965, 5, 5),"taskName":"RnR","status":"KILLED"},
+{"startDate":new Date(1965, 5, 5),"endDate":new Date(1976, 1, 0),"taskName":"RnR","status":"FAILED"},
+{"startDate":new Date(1976, 1, 0),"endDate":new Date(1987, 7, 16),"taskName":"RnR","status":"SUCCEEDED"},
 
 {"startDate":new Date(1958, 3, 0),"endDate":new Date(1965, 5, 5),"taskName":"Rock","status":"RUNNING"},
-{"startDate":new Date(1965, 5, 5),"endDate":new Date(1976, 1, 0),"taskName":"Rock","status":"SUCCEEDED"},
-{"startDate":new Date(1976, 1, 0),"endDate":new Date(1986, 0, 0),"taskName":"Rock","status":"FAILED"},
-{"startDate":new Date(1986, 0, 0),"endDate":new Date(1996, 0, 0),"taskName":"Rock","status":"KILLED"},
+{"startDate":new Date(1965, 5, 5),"endDate":new Date(1976, 1, 0),"taskName":"Rock","status":"KILLED"},
+{"startDate":new Date(1976, 1, 0),"endDate":new Date(1986, 6, 3),"taskName":"Rock","status":"FAILED"},
+{"startDate":new Date(1986, 6, 3),"endDate":new Date(1996, 5, 17),"taskName":"Rock","status":"SUCCEEDED"},
 
 {"startDate":new Date(1969, 6, 0),"endDate":new Date(1976, 1, 0),"taskName":"Punk","status":"RUNNING"},
-{"startDate":new Date(1976, 1, 0),"endDate":new Date(1986, 0, 0),"taskName":"Punk","status":"SUCCEEDED"},
-{"startDate":new Date(1986, 0, 0),"endDate":new Date(1996, 0, 0),"taskName":"Punk","status":"FAILED"},
-{"startDate":new Date(1996, 0, 0),"endDate":new Date(2006, 0, 0),"taskName":"Punk","status":"KILLED"},
+{"startDate":new Date(1976, 1, 0),"endDate":new Date(1986, 6, 3),"taskName":"Punk","status":"KILLED"},
+{"startDate":new Date(1986, 6, 3),"endDate":new Date(1996, 2, 17),"taskName":"Punk","status":"FAILED"},
+{"startDate":new Date(1996, 2, 17),"endDate":new Date(2007, 2, 11),"taskName":"Punk","status":"SUCCEEDED"},
 
 {"startDate":new Date(1979, 8, 15),"endDate":new Date(1986, 6, 3),"taskName":"Hip-Hop","status":"RUNNING"},
-{"startDate":new Date(1986, 6, 3),"endDate":new Date(1966, 0, 0),"taskName":"Hip-Hop","status":"SUCCEEDED"},
-{"startDate":new Date(1966, 0, 0),"endDate":new Date(1976, 0, 0),"taskName":"Hip-Hop","status":"FAILED"},
-{"startDate":new Date(1976, 0, 0),"endDate":new Date(1986, 0, 0),"taskName":"Hip-Hop","status":"KILLED"},
+{"startDate":new Date(1986, 6, 3),"endDate":new Date(1996, 2, 17),"taskName":"Hip-Hop","status":"KILLED"},
+{"startDate":new Date(1996, 2, 17),"endDate":new Date(2006, 0, 0),"taskName":"Hip-Hop","status":"FAILED"},
+{"startDate":new Date(2006, 0, 0),"endDate":new Date(2017, 2, 29),"taskName":"Hip-Hop","status":"SUCCEEDED"},
 
-{"startDate":new Date(1951, 3, 0),"endDate":new Date(1956, 6, 12),"taskName":"EDM","status":"RUNNING"},
-{"startDate":new Date(1956, 6, 12),"endDate":new Date(1966, 0, 0),"taskName":"EDM","status":"SUCCEEDED"},
-{"startDate":new Date(1966, 0, 0),"endDate":new Date(1976, 0, 0),"taskName":"EDM","status":"FAILED"},
-{"startDate":new Date(1976, 0, 0),"endDate":new Date(1986, 0, 0),"taskName":"EDM","status":"KILLED"},
+{"startDate":new Date(1988, 0, 0),"endDate":new Date(1996, 2, 17),"taskName":"EDM","status":"RUNNING"},
+{"startDate":new Date(1996, 2, 17),"endDate":new Date(2006, 0, 0),"taskName":"EDM","status":"KILLED"},
+{"startDate":new Date(2006, 0, 0),"endDate":new Date(2016, 0, 0),"taskName":"EDM","status":"FAILED"},
+{"startDate":new Date(2016, 0, 0),"endDate":new Date(2026, 0, 0),"taskName":"EDM","status":"SUCCEEDED"},
 
 ];
 
