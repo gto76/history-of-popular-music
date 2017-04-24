@@ -1,8 +1,18 @@
-bal
+
+Did Lamar just kill HipHop
+==========================
 
 
+[DAMN.](images/damn.jpg)
 
 
+Ok, hold your horses. Just let me explain the theory and then judge.
+
+So according to the theory every major music ganra has roughly 30 years until it's done. Done in a sense that after this 30 years nothing can change our expectations of what a ganra should sound like.
+
+[graph](images/graph.png)
+
+As seen on the graph every ganra is started with a proto era, in which it is slowly and gradualy developing. Then comes the breaktrough single, which puts it on a map and draws the attention of listeners, artists and music buisnies alike. This is the start of the ganras golden age which lasts roughly 10 years, and also a moment in which the clock starts ticking. After this 10 years there follows 10 years of crisis in which two other ganras steel the focus. In second half of the crisis era, there emerges one subganra, that brings out the worst of the ganra, examples of which are glam rock, hair metal, skate punk, bling rap and bro step. Crisis ends with a revival of ganra in which usualy consists of many diverse subganras, and here comes my contraversial claim, that the death of a ganra happens between two albums made by an exceptional artist. One a masterpiece, that this artist is never again able to surpass, although he produces many more great albums, and the other the album after that. The masterpiece album rises expectations and apetites of many and the future of the ganra seems bright, while actualy it stands on it's last legs.
 
 
 
@@ -30,9 +40,6 @@ Elvisov singl alright mama (54) je bil ful pomemben, ker ga niso hotl country ra
 Anyways, u glavnem mislm da mam resitev, in sicer bom dal vso to "navlako" pod proto rnr in je stvar resena :)
 
 ---
-
-Mislm probat tko napisat da bo cel cajt zanimiv, se prav začet z šokantnim nalovom ala: Why Lamar just killed HipHop :)
-in pol slika kaverja od plate, pa potem ta over-the-top claim da ma vsak žanr rok trajanja 30 let, pa pol dost kmau že graf (na grafu bojo pomembni komadi mel ikonce, ki če boš prtisnu na njih bojo špilale), itd...
 
 ---
 
@@ -83,3 +90,6 @@ Mislm da je biu prvi artist, ki mu je zares ratal Louis Jordan  (jump blues/rnb,
 
 ---
 
+Iz te perspektive ma tud tist Hitler blues dost smisla, koncno so bli crnci in belci v istem dreku 》record blues song 》profit :)
+
+---
