@@ -1,6 +1,6 @@
 
-Did Lamar just kill HipHop
-==========================
+Did Lamar just kill HipHop?
+===========================
 
 
 [DAMN.](images/damn.jpg)
@@ -33,7 +33,19 @@ For rock other candidates could be earlier single "?" by Kinks if one woluld wan
 For EDM, if we define it as an electronic dance music that can be listened to sitting down, the commercial succes of Prodigys' "Fat Of The land" must be the big breaktrough moment.
 
 
-Now I should probably address the oddity of eceptionally long era of proto hip hop. I must admit that it wasn't in my model from beggining in which the proto phase of hophop started with "Rapers delight" by Shugarhill gang. In this early version funk, disco and reaggeaa were placed in revival phase of rnb. Problem with this aproach is that rnb was preety much always just an umbrella term for black music styles, that didn't exist before 45. Also original rnb that was being played from 45 to 55 was together with rockabilly basicaly what became know as rock and roll after its breaktrough in 55 and it has sylisticly little in common with later "rnb", such as funk, reagge and disco. 
+Now I should probably address the oddity of eceptionally long era of proto hip hop. I must admit that it wasn't in my model from beggining in which the proto phase of hophop started with "Rapers delight" by Shugarhill gang. In this early version funk, disco and reaggeaa were placed in revival phase of rnb. Problem with this aproach is that rnb was preety much always just an umbrella term for black music styles, that didn't exist before 45. Also original rnb that was being played from 45 to 55 was together with rockabilly basicaly what became know as rock and roll after its breaktrough in 55 and it has sylisticly little in common with later "rnb", such as funk, reagge and disco. Another solution could also be to create a separate timeline for each one of these styles, but none of them had enough longjevety and prominence to justify that also, and that's basically the reason that they got packaded inside the proto hip-hop era. (so they got packaged inside the proto hip-hop, basicaly because it seems like the most elegant solution.)
+
+
+So how come this eras coincide so neatly, (one might ask). It defenatly seams too good to be true, maybe even bordering on conspiracy theory. (Whathever the reasoning, it must include the economic/industry...) I must admit I didn't bother with it too much, but it must have to do something with the music industry / economic side of music. One thory could be based on the fact that the biggest force in salses of the albums were at least from the mid 40' onward the teenagers, which are at around the age of 14/15 most subseptable to the new music trends. And this new trends/crazes, must by definition sound and feel fresh and hip, they must be something your parents dislike and just don't get. So by this logic, if a ganra is at the point resurgence, this 15 year old teenager was 5 when it came into crisis, so just young enough to not yet be subsective enoght to the popular music...
+
+
+So only inconsistency on the timeline left is a lack of emergance of new major ganra around year 2006. There are two possible explanations. First one is that we can adequatly clasify popular music only in retrospective, and so are lacking the prespective, that will alow us to fully understand what is currently happening in music. But this explanation just feals insuficient if we take in consideration what a huge stirs rock and roll and rock created in their first years, how distinctive punk was from the rock of its era, and the hard separation of Hiphop from other ganras by simple fact that the lyrics are being raped. In this case probably the more pessimistic option is true, namely that there are no new major ganras because the music industry as we kenw it pretty much died, by the 2006, when it was time for next big thing. (...because the music industry was already in such a bad shape by the 2006, that it wasn't able to procreate and push out the next big thing).
+
+
+
+
+
+
 
 
 
