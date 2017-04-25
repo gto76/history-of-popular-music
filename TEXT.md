@@ -33,7 +33,7 @@ For rock other candidates could be earlier single "?" by Kinks if one woluld wan
 For EDM, if we define it as an electronic dance music that can be listened to sitting down, the commercial succes of Prodigys' "Fat Of The land" must be the big breaktrough moment.
 
 
-Now I should probably address the oddity of eceptionally long era of proto hip hop. I must admit that it wasn't in my model from beggining in which the proto phase of hophop started with "Rapers delight" by Shugarhill gang. 
+Now I should probably address the oddity of eceptionally long era of proto hip hop. I must admit that it wasn't in my model from beggining in which the proto phase of hophop started with "Rapers delight" by Shugarhill gang. In this early version funk, disco and reaggeaa were placed in revival phase of rnb. Problem with this aproach is that rnb was preety much always just an umbrella term for black music styles, that didn't exist before 45. Also original rnb that was being played from 45 to 55 was together with rockabilly basicaly what became know as rock and roll after its breaktrough in 55 and it has sylisticly little in common with later "rnb", such as funk, reagge and disco. 
 
 
 
