@@ -21,6 +21,22 @@ Another thing that might be contraversial in this theory besides the selection o
 
 So maybe let's first focus on less contraversial choices — the selection of breaketrough singles. Or maybe better let's explain why only this ganras and why they are divided as they are.
 
+Maybe the most glarring are the ommisions of Pop and Jazz, but also if you look closely the EDM (electronic dance music) does not start before 90. That is because I excluded the EDM, that is made for dancefloor and only left the part that can be listened sitting down. Pop is, as it was mentioned many times before, the ultimate absorber and survivor and it will exist forever. Jazz is a ganra that really comes to life in live setting and trough imporvisation, and something always gets lost when it's captured on a record.
+
+Another curiosity is quantitiy of ganras crammed in rock and roll before it's breaktrough single "Rock around the clock" that started the rock and roll craze in 56. Reason for that is that the progres from boogie woggie to fully developed rock and roll was exceptionally gradual. This evolution basically consists of addition of new instruments and vocals to the rithm that stayed preety much the same from the beggining. (Troought this evolution the rithm basicaly remain  The rythm was basically the same from the beggining, and what was) Of course there were the subganras, that had their own rhytms, and are not meant to be included in proto rnr, such as western music (bluegrass?).
+
+Main reasons for the big break that happened in 56 is the merging of black and country markets (and also singles/albums). Before that almost no white people were buying black music and vice versa. This, together with a shorter time that was needed from recording session to release of a single, contributed to more flouid progression of a style, that became known as rock and roll.
+
+So as with rock and roll, every major ganra that preceeded (sucedded?) it started with a hit single, that basicaly defined it, and so it happens that this singles were following eachchoder in intervals of roughly 10 years. The other singles being "Satisfaction" by Roling stones for rock, "Blietzkrieg Bop" by Ramones for punk, "Walk this way" by RUN DMC (in colaboration with Aerosmith) for Hiphop and "Groove is in the hearth" by "?" for EDM (electronic dance music).
+
+For rock other candidates could be earlier single "?" by Kinks if one woluld want to include the whole brithis garage rock scene under rock or maybe some later single that was not anymore in style of garage rock like "?" by Doors. The significance of Blietzkrieg Bop and the whole Ramones debu album in general for punk can hardly be disputed, only thing one could hold against it, is that it wasn't really a hit single, and one could argue that the "Anarchy in the uk" or "God save the queen" from later that year are a better fit for a breaktrough single. As for hip-hop i think walk this way is a good fit, although it could be argued, that it was still a old-shool style hip-hop, and some other artists from next two years, like Ice-T or Public Enemy better signify the hip-hops step into golden age. Nontheles, none of them had such a big hit as RUN DMC had.
+For EDM, if we define it as an electronic dance music that can be listened to sitting down, the commercial succes of Prodigys' "Fat Of The land" must be the big breaktrough moment.
+
+
+Now I should probably address the oddity of eceptionally long era of proto hip hop. I must admit that it wasn't in my model from beggining in which the proto phase of hophop started with "Rapers delight" by Shugarhill gang. 
+
+
+
 
 
 [singles](images/singles.png)
