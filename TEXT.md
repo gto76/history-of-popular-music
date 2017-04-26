@@ -1,6 +1,6 @@
 
-Did Lamar just kill HipHop?
-===========================
+Did Lamar just kill Hip Hop?
+============================
 
 
 [DAMN.](images/damn.jpg)
@@ -8,11 +8,12 @@ Did Lamar just kill HipHop?
 
 Ok, hold your horses. Just let me explain the theory and then judge.
 
-So according to the theory every major music ganra has roughly 30 years until it's done. Done in a sense that after this 30 years nothing can change our (perception of what a ganra is and what it should sound like.) expectations of what a ganra should sound like.
+So according to the theory every major music ganra has roughly 30 years until it's done. Done in a sense that after that nothing can change our (perception of what a ganra is and what it should sound like.) expectations of what a ganra should sound like. [*People are of course still using elements from dead ganras and incorporate them in music, but that propagates their ganra, but has no effect on our definition and perception of the dead ganra > Or they are just in post era.]
+
 
 [graph](images/graph.png)
 
-As seen on the graph every ganra starts with a proto era (green area), in which it is slowly and gradualy developing. Then comes the breaktrough single, which (starts a craze/puts it in a spotlite) puts it on a map and draws the attention of listeners, artists and music buisnies alike. This is the start of the ganra's golden age which lasts roughly 10 years, and also a moment in which the clock starts ticking. Then follows 10 years of crisis in which two other ganras steel the focus. In second half of the crisis era, there emerges one subganra, that brings out the worst of the ganra, examples of which are glam rock, hair metal, skate punk, bling rap and bro step. Crisis ends with a revival of ganra that usualy consists of many new and diverse subganras. And now comes my contraversial claim, that the death of a ganra happens between two albums made by an exceptional artist. One a masterpiece, that the artist is never again able to surpass, although he produces many more great albums, and the other the album after that. The masterpiece album rises expectations and apetites of many and the future of the ganra seems bright, while actualy it stands on it's last legs (it's on it's last breath).
+As seen on the graph every ganra starts with a proto era (green area), in which it is slowly and gradualy developing. Then comes the breaktrough single, which (starts the craze/puts it in a spotlite) puts it on a map and draws the attention of listeners, artists and music buisnies alike. This is the start of the ganra's golden age which lasts roughly 10 years, and also a moment in which the clock starts ticking. Then follows 10 years of crisis in which two other ganras steel the focus. In second half of the crisis era, there emerges one subganra, that brings out the worst of the ganra, examples of which are glam rock, hair metal, skate punk, bling rap and bro step. Crisis ends with a revival of ganra that usualy consists of many new and diverse subganras. And now comes my contraversial claim, that the death of a ganra happens between two albums made by an exceptional artist. One a masterpiece, that the artist is never again able to surpass, although he produces many more great albums, and the other the album after that. The masterpiece album rises expectations and apetites of many and the future of the ganra seems bright, while actualy it stands on it's last legs (it's on it's last breath).
 
 [covers](images/covers.png)
 
