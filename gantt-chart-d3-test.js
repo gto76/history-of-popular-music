@@ -32,6 +32,9 @@ d3.gantt = function() {
     return "translate(" + x(d.startDate) + "," + y(d.taskName) + ")";
   };
 
+  /**
+   * Calculates min and max date of tasks.
+   */
   var initTimeDomain = function(tasks) {
     if (timeDomainMode === FIT_TIME_DOMAIN_MODE) {
       if (tasks === undefined || tasks.length < 1) {
@@ -50,6 +53,9 @@ d3.gantt = function() {
     }
   };
 
+  /**
+   * Initializes axis.
+   */ 
   var initAxis = function() {
     x = d3.time.scale()
         .domain([timeDomainStart, timeDomainEnd])
@@ -74,7 +80,10 @@ d3.gantt = function() {
         .orient("left")
         .tickSize(0);
   };
-  
+
+  /**
+   * Draws the chart.
+   */
   function gantt(tasks) {
     initTimeDomain(tasks);
     initAxis();
@@ -88,7 +97,8 @@ d3.gantt = function() {
           .attr("class", "gantt-chart")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
-          .attr("transform", "translate(" + margin.left + ", " + margin.top + ")");
+          .attr("transform", "translate(" + margin.left + ", " + 
+                margin.top + ")");
 
     var groups = svg.selectAll(".chart")
         .data(tasks, keyFunction).enter()
@@ -97,7 +107,6 @@ d3.gantt = function() {
     groups.append("rect")
         .attr("rx", 5)
         .attr("ry", 5)
-        // .attr("visibility", "hidden")
         .attr("class", function(d) { 
           if (taskStatus[d.status] == null) { return "bar"; }
           return taskStatus[d.status];
@@ -135,6 +144,11 @@ d3.gantt = function() {
      return gantt;
   };
   
+
+  ////
+  ///  GETTERS
+  //
+
   gantt.margin = function(value) {
     if (!arguments.length)
       return margin;
