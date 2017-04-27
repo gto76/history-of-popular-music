@@ -13,6 +13,7 @@ d3.gantt = function() {
     bottom : 20,
     left : 150
   };
+
   var selector = 'body';
   var timeDomainStart = d3.time.day.offset(new Date(),-3);
   var timeDomainEnd = d3.time.hour.offset(new Date(),+3);
@@ -29,7 +30,7 @@ d3.gantt = function() {
   };
 
   var rectTransform = function(d) {
-    return "translate(" + x(d.startDate) + "," + y(d.taskName) + ")";
+    return "translate(" + x(d.taskName) + "," + y(d.startDate) + ")";  ///
   };
 
   /**
@@ -57,28 +58,28 @@ d3.gantt = function() {
    * Initializes axis.
    */ 
   var initAxis = function() {
-    x = d3.time.scale()
-        .domain([timeDomainStart, timeDomainEnd])
-        .range([0, width])
-        .clamp(true);
-
-    y = d3.scale.ordinal()
+    x = d3.scale.ordinal()
         .domain(taskTypes)
-        .rangeRoundBands([0, height - margin.top - margin.bottom], .1);
+        .rangeRoundBands([0, width - margin.left - margin.right], .1);
+
+    y = d3.time.scale()
+        .domain([timeDomainStart, timeDomainEnd])
+        .range([0, height])
+        .clamp(true);
 
     xAxis = d3.svg.axis()
         .scale(x)
-        .orient("bottom")
+        .orient("top")
+        .tickSize(0);
+
+    yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left")
         .ticks(20)
         .tickFormat(d3.time.format(tickFormat))
         .tickSubdivide(true)
         .tickSize(8)
         .tickPadding(8);
-
-    yAxis = d3.svg.axis()
-        .scale(y)
-        .orient("left")
-        .tickSize(0);
   };
 
   /**
@@ -113,26 +114,26 @@ d3.gantt = function() {
         }) 
         .attr("y", 0)
         .attr("transform", rectTransform)
-        .attr("height", function(d) { return y.rangeBand(); })
-        .attr("width", function(d) { 
-          return Math.max(1, (x(d.endDate) - x(d.startDate)) ); 
+        .attr("height", function(d) { 
+          return Math.max(1, (y(d.endDate) - y(d.startDate)) );
         })
+        .attr("width", function(d) { return x.rangeBand(); })
      
-    groups.append("circle")
-        .attr("cx", 0)
-        .attr("cy", 0)
-        .attr("r", 15)
-        .attr("fill", "blue")
-        .attr("transform", function(d) {
-          dHor = x(d.startDate)
-          dVer = y(d.taskName) + y.rangeBand()/2
-          return "translate(" + dHor + "," + dVer + ")"
-        })
+    // groups.append("circle")
+    //     .attr("cx", 0)
+    //     .attr("cy", 0)
+    //     .attr("r", 15)
+    //     .attr("fill", "blue")
+    //     .attr("transform", function(d) {
+    //       dHor = x(d.startDate)
+    //       dVer = y(d.taskName) + y.rangeBand()/2
+    //       return "translate(" + dHor + "," + dVer + ")"
+    //     })
 
     svg.append("g")
         .attr("class", "x axis")
         .attr("transform", 
-            "translate(0, " + (height - margin.top - margin.bottom) + ")")
+            "translate(0, " + 0 + ")")
         .transition()
         .call(xAxis);
      
