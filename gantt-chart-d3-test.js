@@ -77,7 +77,7 @@ d3.gantt = function() {
         .orient("left")
         .ticks(20)
         .tickFormat(d3.time.format(tickFormat))
-        .tickSubdivide(true)
+        .tickSubdivide(false)
         .tickSize(8)
         .tickPadding(8);
   };
@@ -131,16 +131,22 @@ d3.gantt = function() {
     //     })
 
     svg.append("g")
+        .style("font-size", "18px")
         .attr("class", "x axis")
         .attr("transform", 
             "translate(0, " + 0 + ")")
         .transition()
         .call(xAxis);
      
-     svg.append("g")
+    svg.append("g")
         .attr("class", "y axis")
         .transition()
         .call(yAxis);
+
+    // svg.append("g")
+    //   .style("font", "14px times")
+    //   .attr("transform", "translate(0," + height + ")")
+    //   .call(d3.axisBottom(x));
      
      return gantt;
   };
