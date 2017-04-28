@@ -20,23 +20,6 @@
 //  </style>
 // </head>
 
-// <body>
-
-// <h4 style="position: absolute; left: 130px; top: 20px">Crossfade:</h4>
-
-// <input id="ex6" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
-
-// <script>
-//  $("#ex6").slider() 
-//  $(".slider").attr('style', 'position: absolute; left: 230px; top: 30px');
-//  $("#ex6").on("slide", function(slideEvt) {
-//    crossfadeDuration = slideEvt.value * 1000
-//  });
-// </script>
-
-// <div id="body">
-
-// <script type="text/javascript">
 
 //////////////////////////////////////
 var DEBUG = true
@@ -65,7 +48,7 @@ var RADIUS_TRANSITION_MIN = 1000
 
 var crossfadeDuration = CROSSFADE_DURATION
 
-var songs = JSON.parse(songs);
+// var songs = JSON.parse(songs);
 
 var width = getWidth()
 var height = getHeight() 
