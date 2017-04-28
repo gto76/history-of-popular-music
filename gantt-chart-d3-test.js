@@ -104,6 +104,7 @@ d3.gantt = function() {
     var groups = svg.selectAll(".chart")
         .data(tasks, keyFunction).enter()
         .append("g")
+            .attr("class", "era")
     
     groups.append("rect")
         .attr("rx", 5)
@@ -119,14 +120,27 @@ d3.gantt = function() {
         })
         .attr("width", function(d) { return x.rangeBand(); })
      
+    // // Music icons. 
+    // groups.filter(function(d) { return ("idd" in d); })
+    //     .append("circle")
+    //     .attr("cx", 0)
+    //     .attr("cy", 0)
+    //     .attr("r", 15)
+    //     .attr("fill", "blue")
+    //     .attr("transform", function(d) {
+    //       dHor = x(d.taskName) + x.rangeBand()/2
+    //       dVer = y(d.startDate)
+    //       return "translate(" + dHor + "," + dVer + ")"
+    //     })
+
     // groups.append("circle")
     //     .attr("cx", 0)
     //     .attr("cy", 0)
     //     .attr("r", 15)
     //     .attr("fill", "blue")
     //     .attr("transform", function(d) {
-    //       dHor = x(d.startDate)
-    //       dVer = y(d.taskName) + y.rangeBand()/2
+    //       dHor = x(d.taskName) + x.rangeBand()/2
+    //       dVer = y(d.startDate)
     //       return "translate(" + dHor + "," + dVer + ")"
     //     })
 

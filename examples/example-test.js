@@ -4,7 +4,7 @@ function example() {
 
 var tasks = [
 
-{"startDate":new Date(1922, 0, 0),"endDate":new Date(1956, 0, 0),"taskName":"RnR","status":"RUNNING"},
+{"startDate":new Date(1922, 0, 0),"endDate":new Date(1956, 0, 0),"taskName":"RnR","status":"RUNNING", "song":"Robert_Karpinski-Dla_O", "r": 20},
 {"startDate":new Date(1956, 0, 0),"endDate":new Date(1966, 0, 0),"taskName":"RnR","status":"KILLED"},
 {"startDate":new Date(1966, 0, 0),"endDate":new Date(1976, 0, 0),"taskName":"RnR","status":"FAILED"},
 {"startDate":new Date(1976, 0, 0),"endDate":new Date(1986, 0, 0),"taskName":"RnR","status":"SUCCEEDED"},
