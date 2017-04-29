@@ -38,17 +38,15 @@ var TRIANGLE_FILL_OPACITY = 0.9
 var BACKGROUND_OPACITY = 0.22
 var OPACITY_FADE_TIME = 300
 
-var CROSSFADE_DURATION = 3000
+var CROSSFADE_DURATION = 1000
 var CROSSFADE_VOLUME = true
-var FADEOUT_DURATION = 1000
+var FADEOUT_DURATION = 750
 var FADEIN_DURATION = 0
 var RADIUS_TRANSITION_MIN = 1000
 
 //////////////////////////////////////
 
 var crossfadeDuration = CROSSFADE_DURATION
-
-// var songs = JSON.parse(songs);
 
 var width = getWidth()
 var height = getHeight() 
@@ -108,10 +106,15 @@ var height = getHeight()
 
 
 var nodes = d3.selectAll("g.era") //.enter()
-  .filter(function(d) { return ("song" in d); })
+  .filter(function(d) { return ("songs" in d); })
   .append("g")
-    .on("click", function(d) { play(d) })
-    .attr('id', function(d) { return 'name' + d.song })
+    .on("click", function(d) { play(d.songs[0]) })
+    .attr('id', function(d) { return 'name' + d.songs[0].song })
+    .attr("transform", function(d) {
+      dHor = x(d.taskName) + x.rangeBand()/2 - d.songs[0].r
+      dVer = y(d.startDate) - d.songs[0].r
+      return "translate(" + dHor + "," + dVer + ")"
+    })
 
 var clipPath = nodes.append("clipPath")
   .attr("id", "cut-off-bottom")
@@ -125,10 +128,14 @@ nodes.append("image")
   .attr("x", "0")
   .attr("y", "0")
   .attr("xlink:href", 
-      function(d) { return "../JamendoDataset/"+ d.song + ".jpg" })
-  .attr("height", function(d) { return (d.r) * 2; })
-  .attr("width", function(d) { return (d.r) * 2; })
+      function(d) { return "../JamendoDataset/"+ d.songs[0].song + ".jpg" })
+  .attr("height", function(d) { return (d.songs[0].r) * 2; })
+  .attr("width", function(d) { return (d.songs[0].r) * 2; })
   .attr("clip-path", "url(#cut-off-bottom)")
+
+//#####################
+//##### PLAY ICON #####
+//#####################
 
 addPlayIcon(nodes)
 
@@ -163,8 +170,6 @@ function addPlayIcon(ggg) {
     .attr("fill", TRIANGLE_COLOR)
 }
 
-// #### PLAY ICON ####
-
 function showPlayIcon(id) {
   setPlayIconOpacity(id, TRIANGLE_FILL_OPACITY)
 }
@@ -191,12 +196,12 @@ function setPlayIconOpacity(id, opacity) {
 var playing = ""
 
 var nodes = d3.selectAll("g.era") //.enter()
-  .filter(function(d) { return ("song" in d); })
+  .filter(function(d) { return ("songs" in d); })
   .each(function(d) {
-    generateAudioElements(d.song); 
+    generateAudioElement(d.songs[0].song); 
   });
 
-function generateAudioElements(id) {
+function generateAudioElement(id) {
   // var id = id.slice(1),
   var track = new Audio();
   var audioElement = document.createElement("source");
@@ -222,34 +227,6 @@ function generateAudioElements(id) {
   track.appendChild(audioElement)
   document.body.appendChild(track)
 }
-
-// function generateAudioElements() {
-//   for (var id in songs.songs) {
-//     var id = id.slice(1),
-//         track = new Audio(),
-//         audioElement = document.createElement("source");
-//     track.setAttribute("id", "audio"+id);
-//     audioElement.setAttribute("src", "../JamendoDataset/"+id+".mp3");
-
-//     track.addEventListener('ended', function(e) {
-//       if (DEBUG) console.log("ENDED event "+this.id)
-//       hidePlayIcon(this.id.slice(5))
-//     }, false);
-
-//     track.addEventListener('play', function(e) {
-//       if (DEBUG) console.log("PLAY event "+this.id)
-//       showPlayIcon(this.id.slice(5))
-//     }, false);
-
-//     track.addEventListener('pause', function(e) {
-//       if (DEBUG) console.log("PAUSE event "+this.id)
-//       hidePlayIcon(this.id.slice(5))
-//     }, false);
-
-//     track.appendChild(audioElement)
-//     document.body.appendChild(track)
-//   }
-// }
 
 function play(nodesData){
   var audioEl = getAudioEl(nodesData)
@@ -342,7 +319,7 @@ function getNode(audioEl) {
 }
 
 function getAudioEl(nodesData){
-  var audioFileId = nodesData.song
+  var audioFileId = nodesData.songs[0].song
   var node = d3.select( '#name' + audioFileId );  
   return document.getElementById("audio"+audioFileId);
 }
@@ -360,6 +337,3 @@ function getHeight() {
       g = document.getElementsByTagName('body')[0]
   return w.innerHeight|| e.clientHeight|| g.clientHeight;
 }
-
-// </script>
-// </body></html>
