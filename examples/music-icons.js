@@ -319,7 +319,7 @@ function getNode(audioEl) {
 }
 
 function getAudioEl(nodesData){
-  var audioFileId = nodesData.songs[0].song
+  var audioFileId = nodesData.song
   var node = d3.select( '#name' + audioFileId );  
   return document.getElementById("audio"+audioFileId);
 }
