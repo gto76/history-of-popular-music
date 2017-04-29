@@ -120,9 +120,9 @@ var clipPath = nodes.append("clipPath")
   .attr("id", "cut-off-bottom")
 
 clipPath.append("circle")
-  .attr("cx", function(d) { return d.r; })
-  .attr("cy", function(d) { return d.r; })
-  .attr("r", function(d) { return d.r; })
+  .attr("cx", function(d) { return d.songs[0].r; })
+  .attr("cy", function(d) { return d.songs[0].r; })
+  .attr("r", function(d) { return d.songs[0].r; })
 
 nodes.append("image")
   .attr("x", "0")
