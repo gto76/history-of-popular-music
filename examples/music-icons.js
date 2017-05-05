@@ -44,42 +44,47 @@ function getYRange(startDate, endDate) {
 
 var nodes = d3.selectAll("g.era")
   .filter(function(d) { return ("songs" in d); })
-  .each(function(d) {
-    d.songs.forEach(function(song) {
-      generateCircle(song, d.taskName)
-    });
-  });
-
-function generateCircle(song, taskName) {
-  d3.select("g.gnatt-chart")
-    .append("g")
-    .on("click", function(d) { play(song) })
-    .attr('id', function(d) { return 'name' + song.song })
-    .attr("transform", function(d) {
-      dHor = x(taskName) + x.rangeBand()/2 - r
-      dVer = y(song.date) - r
-      // dVer = y(d.startDate) - r 
-      //        + d.songs[0].y * getYRange(d.startDate, d.endDate)
-      return "translate(" + dHor + "," + dVer + ")"
+  .selectAll('circle')
+    .data(function (d) { return d.songs; })
+    .enter()
+    .append('circle')
+    .attr('cy', function (d) {
+        console.log(d)
+        return y(d.date)
     })
-}
+    .attr('cx', 100)
+    .attr("r", 5)
 
-var clipPath = nodes.append("clipPath")
-  .attr("id", "cut-off-bottom")
+// function generateCircle(song, taskName) {
+//   d3.select("g.gnatt-chart")
+//     .append("g")
+//       .on("click", function(d) { play(song) })
+//       .attr('id', function(d) { return 'name' + song.song })
+//       .attr("transform", function(d) {
+//         dHor = x(taskName) + x.rangeBand()/2 - r
+//         dVer = y(song.date) - r
+//         // dVer = y(d.startDate) - r 
+//         //        + d.songs[0].y * getYRange(d.startDate, d.endDate)
+//         return "translate(" + dHor + "," + dVer + ")"
+//       })
+// }
 
-clipPath.append("circle")
-  .attr("cx", r)
-  .attr("cy", r)
-  .attr("r", r)
+// var clipPath = nodes.append("clipPath")
+//   .attr("id", "cut-off-bottom")
 
-nodes.append("image")
-  .attr("x", "0")
-  .attr("y", "0")
-  .attr("xlink:href", 
-      function(d) { return "../JamendoDataset/"+ d.songs[0].song + ".jpg" })
-  .attr("height", r * 2)
-  .attr("width", r * 2)
-  .attr("clip-path", "url(#cut-off-bottom)")
+// clipPath.append("circle")
+//   .attr("cx", r)
+//   .attr("cy", r)
+//   .attr("r", r)
+
+// nodes.append("image")
+//   .attr("x", "0")
+//   .attr("y", "0")
+//   .attr("xlink:href", 
+//       function(d) { return "../JamendoDataset/"+ d.songs[0].song + ".jpg" })
+//   .attr("height", r * 2)
+//   .attr("width", r * 2)
+//   .attr("clip-path", "url(#cut-off-bottom)")
 
 //#####################
 //##### PLAY ICON #####
