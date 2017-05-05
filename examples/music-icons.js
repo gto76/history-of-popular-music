@@ -54,15 +54,16 @@ function main() {
   addClipPath(songIcons)
   addImage(songIcons)
   addPlayIcon(songIcons)
+  addText(songIcons)
 
   // Generates audio element for each songIcon.
   songIcons.each(function(song) { generateAudioElement(song.title); });
 }
 
 
-//######################
-//##### SONG ICONS #####
-//######################
+////
+///  SONG ICONS
+//
 
 function generateSongIcons() {
   return d3.selectAll("g.era")
@@ -164,10 +165,26 @@ function setPlayIconOpacity(id, opacity, backgroundOpacity, triangleFadeTime,
     .attr("fill-opacity", backgroundOpacity)
 }
 
+function addText(songIcons) {
+  songIcons
+    .filter(function(song) { return ("text" in song); })
+    .selectAll('text')
+      .data(function (song) { return song.text; })
+      .enter()
+      .append("text")
+        .attr("x", r)
+        .attr("y", function(text, i) { return 2.5*r + i*r*3.2/5; })
+        .attr("fill", "#444444")
+        .attr("font-size", r * 2.8/5)
+        .attr("alignment-baseline", "middle")
+        .attr("text-anchor", "middle")
+        .text(function(text, i) { return text; })
+}
 
-//#################
-//##### AUDIO #####
-//#################
+
+////
+///  AUDIO ELEMENTS
+// 
 
 function generateAudioElement(id) {
   var track = new Audio();
@@ -267,9 +284,9 @@ function fadeOut(audioEl, duration) {
 }
 
 
-//################
-//##### UTIL #####
-//################
+////
+///  UTIL
+// 
 
 function contains(a, obj) {
   var i = a.length;
