@@ -2,7 +2,7 @@
  * Script for drawing circles, that play music when clicked on.
  */
 
-var DEBUG = true
+var DEBUG = false
 
 var RADIUS = 20
 var PLAYING_RADIUS_FACTOR = 2.5
@@ -15,8 +15,10 @@ var TRIANGLE_SIZE_FACTOR = 0.72
 var TRIANGLE_COLOR = "white"
 var BACKGROUND_COLOR = "black"
 var TRIANGLE_FILL_OPACITY = 0.9 
-var BACKGROUND_OPACITY = 0.22
+var BACKGROUND_OPACITY = 0.0
+var BACKGROUND_OPACITY_PLAY = 0.22
 var OPACITY_FADE_TIME = 300
+var BKG_OPACITY_FADE_TIME = 400
 
 var CROSSFADE_DURATION = 1000
 var CROSSFADE_VOLUME = true
@@ -125,11 +127,12 @@ function addPlayIcon(songIcons) {
     .interpolate("linear");
 
   var shade = songIcons.append("circle")
+    .attr("class", "play-background")
     .attr("cx", r)
     .attr("cy", r)
     .attr("r", r)
     .attr("fill", BACKGROUND_COLOR)
-    .attr("fill-opacity","0.1")
+    .attr("fill-opacity", BACKGROUND_OPACITY)
 
   var path = songIcons.append("path")
     .attr("d", lineFunction(triangle))
@@ -138,19 +141,27 @@ function addPlayIcon(songIcons) {
 }
 
 function showPlayIcon(id) {
-  setPlayIconOpacity(id, TRIANGLE_FILL_OPACITY)
+  setPlayIconOpacity(id, TRIANGLE_FILL_OPACITY, BACKGROUND_OPACITY_PLAY, 
+                     OPACITY_FADE_TIME, BKG_OPACITY_FADE_TIME)
 }
 
 function hidePlayIcon(id) {
-  setPlayIconOpacity(id, 0.0)
+  setPlayIconOpacity(id, 0.0, BACKGROUND_OPACITY, OPACITY_FADE_TIME, 
+                     OPACITY_FADE_TIME)
 }
 
-function setPlayIconOpacity(id, opacity) {
-  var ggg = d3.selectAll('#name' + id)
-  ggg.select("path")
+function setPlayIconOpacity(id, opacity, backgroundOpacity, triangleFadeTime,
+                            bkgFadeTime) {
+  var songIcon = d3.selectAll('#name' + id)
+  songIcon.select("path")
     .transition()
-    .duration(OPACITY_FADE_TIME)
+    .duration(triangleFadeTime)
     .attr("fill-opacity", opacity)
+
+  songIcon.select("circle.play-background")
+    .transition()
+    .duration(bkgFadeTime)
+    .attr("fill-opacity", backgroundOpacity)
 }
 
 
