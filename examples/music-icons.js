@@ -48,7 +48,22 @@ var playing = ""
 main()
 
 function main() {
-  var nodes = d3.selectAll("g.era")
+  var songIcons = generateSongIcons()
+  addClipPath(songIcons)
+  addImage(songIcons)
+  addPlayIcon(songIcons)
+
+  // Generates audio element for each songIcon.
+  songIcons.each(function(song) { generateAudioElement(song.title); });
+}
+
+
+//######################
+//##### SONG ICONS #####
+//######################
+
+function generateSongIcons() {
+  return d3.selectAll("g.era")
     .filter(function(d) { return ("songs" in d); })
     .selectAll('g.icon')
       .data(function (task) { 
@@ -71,16 +86,19 @@ function main() {
           dVer = y(song.date) - r
           return "translate(" + dHor + "," + dVer + ")"
         })
+}
 
-  var clipPath = nodes.append("clipPath")
+function addClipPath(songIcons) {
+  songIcons.append("clipPath")
     .attr("id", "cut-off-bottom")
+    .append("circle")
+      .attr("cx", r)
+      .attr("cy", r)
+      .attr("r", r)
+}
 
-  clipPath.append("circle")
-    .attr("cx", r)
-    .attr("cy", r)
-    .attr("r", r)
-
-  nodes.append("image")
+function addImage(songIcons) {
+  songIcons.append("image")
     .attr("x", "0")
     .attr("y", "0")
     .attr("xlink:href", 
@@ -88,25 +106,11 @@ function main() {
     .attr("height", r * 2)
     .attr("width", r * 2)
     .attr("clip-path", "url(#cut-off-bottom)")
-
-  // Adds play icon to every circle with a song.
-  addPlayIcon(nodes)
-
-  // Generates audio for each circle with a song.
-  d3.selectAll("g.icon")
-    .each(function(song) { generateAudioElement(song.title); });
-
 }
 
-
-//#####################
-//##### PLAY ICON #####
-//#####################
-
-function addPlayIcon(ggg) {
+function addPlayIcon(songIcons) {
+  // There are five points so that all corners of triangle are rendered nicely.
   var s = TRIANGLE_SIZE_FACTOR
-
-  // Rhere are five points so that all corners of triangle are rendered nicely.
   var triangle = [ 
       { "x": r - (r*0.55 * s), "y": r - (r*0.45 * s) }, 
       { "x": r + (r*0.75 * s), "y": r },
@@ -120,14 +124,14 @@ function addPlayIcon(ggg) {
     .y(function(d) { return d.y; })
     .interpolate("linear");
 
-  var shade = ggg.append("circle")
+  var shade = songIcons.append("circle")
     .attr("cx", r)
     .attr("cy", r)
     .attr("r", r)
     .attr("fill", BACKGROUND_COLOR)
-    .attr("fill-opacity","0.4")
+    .attr("fill-opacity","0.1")
 
-  var path = ggg.append("path")
+  var path = songIcons.append("path")
     .attr("d", lineFunction(triangle))
     .attr("fill-opacity","0.0")
     .attr("fill", TRIANGLE_COLOR)
@@ -153,12 +157,6 @@ function setPlayIconOpacity(id, opacity) {
 //#################
 //##### AUDIO #####
 //#################
-
-// var nodes = d3.selectAll("g.era") //.enter()
-//   .filter(function(d) { return ("songs" in d); })
-//   .each(function(d) {
-//     generateAudioElement(d.songs[0].song); 
-//   });
 
 function generateAudioElement(id) {
   var track = new Audio();
