@@ -54,6 +54,7 @@ function main() {
   addClipPath(songIcons)
   addImage(songIcons)
   addPlayIcon(songIcons)
+  addYear(songIcons)
   addText(songIcons)
 
   // Generates audio element for each songIcon.
@@ -137,7 +138,7 @@ function addPlayIcon(songIcons) {
 
   var path = songIcons.append("path")
     .attr("d", lineFunction(triangle))
-    .attr("fill-opacity","0.0")
+    .attr("fill-opacity", "0.0")
     .attr("fill", TRIANGLE_COLOR)
 }
 
@@ -165,20 +166,37 @@ function setPlayIconOpacity(id, opacity, backgroundOpacity, triangleFadeTime,
     .attr("fill-opacity", backgroundOpacity)
 }
 
+function addYear(songIcons) {
+  songIcons
+    .filter(function(song) { return ("year" in song); })
+    .append("text")
+      .attr("class", "year")
+      .attr("x", r)
+      .attr("y", r)
+      .attr("fill", 'white')
+      .attr("fill-opacity", 0.8)
+      .attr("font-size", r)
+      .attr("alignment-baseline", "middle")
+      .attr("text-anchor", "middle")
+      .text(function(song) { return String(song.year).substr(2,4) + "'"; })
+}
+
+
 function addText(songIcons) {
   songIcons
     .filter(function(song) { return ("text" in song); })
-    .selectAll('text')
+    .selectAll('text.title')
       .data(function (song) { return song.text; })
       .enter()
       .append("text")
+        .attr("class", "title")
         .attr("x", r)
         .attr("y", function(text, i) { return 2.5*r + i*r*3.2/5; })
         .attr("fill", "#444444")
         .attr("font-size", r * 2.8/5)
         .attr("alignment-baseline", "middle")
         .attr("text-anchor", "middle")
-        .text(function(text, i) { return text; })
+        .text(function(text) { return text; })
 }
 
 
