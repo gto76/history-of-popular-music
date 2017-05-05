@@ -6,6 +6,8 @@
 d3.gantt = function() {
   var FIT_TIME_DOMAIN_MODE = "fit";
   var FIXED_TIME_DOMAIN_MODE = "fixed";
+
+  var START_YEAR = 1919
   
   var margin = {
     top : 20,
@@ -20,8 +22,8 @@ d3.gantt = function() {
   var timeDomainMode = FIT_TIME_DOMAIN_MODE;  // Fixed or fit.
   var taskTypes = [];
   var taskStatus = [];
-  var height = document.body.clientHeight - margin.top - margin.bottom-5;
-  var width = document.body.clientWidth - margin.right - margin.left-5;
+  var height = 900 //document.body.clientHeight - margin.top - margin.bottom-5;
+  var width = 1000 //document.body.clientWidth - margin.right - margin.left-5;
 
   var tickFormat = "%H:%M";
 
@@ -50,7 +52,9 @@ d3.gantt = function() {
       tasks.sort(function(a, b) {
         return a.startDate - b.startDate;
       });
-      timeDomainStart = tasks[0].startDate;
+      timeDomainStart = new Date(tasks[0].startDate.getDate())
+      // var firstYear = timeDomainStart.getFullYear()
+      timeDomainStart.setFullYear(START_YEAR)
     }
   };
 
@@ -94,12 +98,12 @@ d3.gantt = function() {
           .attr("class", "chart")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-          .attr("class", "gantt-chart")
-          .attr("width", width + margin.left + margin.right)
-          .attr("height", height + margin.top + margin.bottom)
-          .attr("transform", "translate(" + margin.left + ", " + 
-                margin.top + ")");
+          .append("g")
+            .attr("class", "gantt-chart")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .attr("transform", "translate(" + margin.left + ", " + 
+                  margin.top + ")");
 
     var groups = svg.selectAll(".chart")
         .data(tasks, keyFunction).enter()
@@ -119,30 +123,6 @@ d3.gantt = function() {
           return Math.max(1, (y(d.endDate) - y(d.startDate)) );
         })
         .attr("width", function(d) { return x.rangeBand(); })
-     
-    // // Music icons. 
-    // groups.filter(function(d) { return ("idd" in d); })
-    //     .append("circle")
-    //     .attr("cx", 0)
-    //     .attr("cy", 0)
-    //     .attr("r", 15)
-    //     .attr("fill", "blue")
-    //     .attr("transform", function(d) {
-    //       dHor = x(d.taskName) + x.rangeBand()/2
-    //       dVer = y(d.startDate)
-    //       return "translate(" + dHor + "," + dVer + ")"
-    //     })
-
-    // groups.append("circle")
-    //     .attr("cx", 0)
-    //     .attr("cy", 0)
-    //     .attr("r", 15)
-    //     .attr("fill", "blue")
-    //     .attr("transform", function(d) {
-    //       dHor = x(d.taskName) + x.rangeBand()/2
-    //       dVer = y(d.startDate)
-    //       return "translate(" + dHor + "," + dVer + ")"
-    //     })
 
     svg.append("g")
         .style("font-size", "18px")
@@ -156,11 +136,6 @@ d3.gantt = function() {
         .attr("class", "y axis")
         .transition()
         .call(yAxis);
-
-    // svg.append("g")
-    //   .style("font", "14px times")
-    //   .attr("transform", "translate(0," + height + ")")
-    //   .call(d3.axisBottom(x));
      
      return gantt;
   };

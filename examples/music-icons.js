@@ -33,7 +33,7 @@ var crossfadeDuration = CROSSFADE_DURATION
 var width = getWidth()
 var height = getHeight() 
 
-var hSpace = x.rangeBand() / 4;
+var hSpace = x.rangeBand() / 7; //4;
 var vSpace = getYRange(new Date(1986, 0, 0), new Date(1996, 0, 0)) / 4;
 
 var r = Math.min(hSpace, vSpace);
@@ -196,9 +196,9 @@ function addText(songIcons) {
       .append("text")
         .attr("class", "title")
         .attr("x", r)
-        .attr("y", function(text, i) { return 2.5*r + i*r*3.2/5; })
-        .attr("fill", "#444444")
-        .attr("font-size", r * 2.8/5)
+        .attr("y", function(text, i) { return 2.4*r + i*r*3.1/5; })
+        .attr("fill", "#333333")
+        .attr("font-size", r * 2.6/5)
         .attr("alignment-baseline", "middle")
         .attr("text-anchor", "middle")
         .text(function(text) { return text; })
