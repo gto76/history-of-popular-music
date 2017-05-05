@@ -36,61 +36,72 @@ var vSpace = getYRange(new Date(1986, 0, 0), new Date(1996, 0, 0)) / 4;
 
 var r = Math.min(hSpace, vSpace);
 
-//////////////////////////////////////
-
 function getYRange(startDate, endDate) {
   return y(endDate) - y(startDate)
 }
 
-var nodes = d3.selectAll("g.era")
-  .filter(function(d) { return ("songs" in d); })
-  .selectAll('circle')
-    .data(function (d) { return d.songs; })
-    .enter()
-    .append('circle')
-    .attr('cy', function (d) {
-        console.log(d)
-        return y(d.date)
-    })
-    .attr('cx', 100)
-    .attr("r", 5)
+// Last audio element that started playing and is still playing.
+var playing = ""
 
-// function generateCircle(song, taskName) {
-//   d3.select("g.gnatt-chart")
-//     .append("g")
-//       .on("click", function(d) { play(song) })
-//       .attr('id', function(d) { return 'name' + song.song })
-//       .attr("transform", function(d) {
-//         dHor = x(taskName) + x.rangeBand()/2 - r
-//         dVer = y(song.date) - r
-//         // dVer = y(d.startDate) - r 
-//         //        + d.songs[0].y * getYRange(d.startDate, d.endDate)
-//         return "translate(" + dHor + "," + dVer + ")"
-//       })
-// }
+//////////////////////////////////////
 
-// var clipPath = nodes.append("clipPath")
-//   .attr("id", "cut-off-bottom")
+main()
 
-// clipPath.append("circle")
-//   .attr("cx", r)
-//   .attr("cy", r)
-//   .attr("r", r)
+function main() {
+  var nodes = d3.selectAll("g.era")
+    .filter(function(d) { return ("songs" in d); })
+    .selectAll('g.icon')
+      .data(function (task) { 
+          // Appends taskName to all songs.
+          var songsOut = [];
+          for (i = 0; i < task.songs.length; i++) {
+            var song = task.songs[i]
+            song.taskName = task.taskName
+            songsOut.push(song)
+          } 
+          return songsOut; 
+        })
+      .enter()
+      .append('g')
+        .attr("class", "icon")
+        .on("click", function(song) { play(song) })
+        .attr('id', function(song) { return 'name' + song.title })
+        .attr("transform", function(song) {
+          dHor = x(song.taskName) + x.rangeBand()/2 - r
+          dVer = y(song.date) - r
+          return "translate(" + dHor + "," + dVer + ")"
+        })
 
-// nodes.append("image")
-//   .attr("x", "0")
-//   .attr("y", "0")
-//   .attr("xlink:href", 
-//       function(d) { return "../JamendoDataset/"+ d.songs[0].song + ".jpg" })
-//   .attr("height", r * 2)
-//   .attr("width", r * 2)
-//   .attr("clip-path", "url(#cut-off-bottom)")
+  var clipPath = nodes.append("clipPath")
+    .attr("id", "cut-off-bottom")
+
+  clipPath.append("circle")
+    .attr("cx", r)
+    .attr("cy", r)
+    .attr("r", r)
+
+  nodes.append("image")
+    .attr("x", "0")
+    .attr("y", "0")
+    .attr("xlink:href", 
+        function(song) { return "../JamendoDataset/"+ song.title + ".jpg" })
+    .attr("height", r * 2)
+    .attr("width", r * 2)
+    .attr("clip-path", "url(#cut-off-bottom)")
+
+  // Adds play icon to every circle with a song.
+  addPlayIcon(nodes)
+
+  // Generates audio for each circle with a song.
+  d3.selectAll("g.icon")
+    .each(function(song) { generateAudioElement(song.title); });
+
+}
+
 
 //#####################
 //##### PLAY ICON #####
 //#####################
-
-addPlayIcon(nodes)
 
 function addPlayIcon(ggg) {
   var s = TRIANGLE_SIZE_FACTOR
@@ -138,18 +149,16 @@ function setPlayIconOpacity(id, opacity) {
     .attr("fill-opacity", opacity)
 }
 
+
 //#################
 //##### AUDIO #####
 //#################
 
-// Last audio element that started playing and is still playing.
-var playing = ""
-
-var nodes = d3.selectAll("g.era") //.enter()
-  .filter(function(d) { return ("songs" in d); })
-  .each(function(d) {
-    generateAudioElement(d.songs[0].song); 
-  });
+// var nodes = d3.selectAll("g.era") //.enter()
+//   .filter(function(d) { return ("songs" in d); })
+//   .each(function(d) {
+//     generateAudioElement(d.songs[0].song); 
+//   });
 
 function generateAudioElement(id) {
   var track = new Audio();
@@ -248,6 +257,7 @@ function fadeOut(audioEl, duration) {
   }, duration);
 }
 
+
 //################
 //##### UTIL #####
 //################
@@ -268,7 +278,7 @@ function getNode(audioEl) {
 }
 
 function getAudioEl(nodesData){
-  var audioFileId = nodesData.song
+  var audioFileId = nodesData.title
   var node = d3.select( '#name' + audioFileId );  
   return document.getElementById("audio"+audioFileId);
 }

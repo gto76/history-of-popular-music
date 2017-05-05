@@ -104,7 +104,7 @@ d3.gantt = function() {
     var groups = svg.selectAll(".chart")
         .data(tasks, keyFunction).enter()
         .append("g")
-            .attr("class", "era")
+          .attr("class", "era")
     
     groups.append("rect")
         .attr("rx", 5)
