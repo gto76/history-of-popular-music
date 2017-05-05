@@ -32,22 +32,37 @@ var width = getWidth()
 var height = getHeight() 
 
 var hSpace = x.rangeBand() / 4;
-var vSpace = (y(new Date(1996, 0, 0)) - y(new Date(1986, 0, 0))) / 4;
+var vSpace = getYRange(new Date(1986, 0, 0), new Date(1996, 0, 0)) / 4;
 
 var r = Math.min(hSpace, vSpace);
 
 //////////////////////////////////////
 
+function getYRange(startDate, endDate) {
+  return y(endDate) - y(startDate)
+}
+
 var nodes = d3.selectAll("g.era")
   .filter(function(d) { return ("songs" in d); })
-  .append("g")
-    .on("click", function(d) { play(d.songs[0]) })
-    .attr('id', function(d) { return 'name' + d.songs[0].song })
+  .each(function(d) {
+    d.songs.forEach(function(song) {
+      generateCircle(song, d.taskName)
+    });
+  });
+
+function generateCircle(song, taskName) {
+  d3.select("g.gnatt-chart")
+    .append("g")
+    .on("click", function(d) { play(song) })
+    .attr('id', function(d) { return 'name' + song.song })
     .attr("transform", function(d) {
-      dHor = x(d.taskName) + x.rangeBand()/2 - r
-      dVer = y(d.startDate) - r
+      dHor = x(taskName) + x.rangeBand()/2 - r
+      dVer = y(song.date) - r
+      // dVer = y(d.startDate) - r 
+      //        + d.songs[0].y * getYRange(d.startDate, d.endDate)
       return "translate(" + dHor + "," + dVer + ")"
     })
+}
 
 var clipPath = nodes.append("clipPath")
   .attr("id", "cut-off-bottom")
