@@ -63,6 +63,8 @@ function main() {
 
   // Generates audio element for each songIcon.
   songIcons.each(function(song) { generateAudioElement(song.title); });
+
+  // addRemarks()
 }
 
 
@@ -70,19 +72,56 @@ function main() {
 ///  SONG ICONS
 //
 
+// function addRemarks() {
+//   return d3.selectAll("g.era")
+//     .filter(function(d) { return ("remarks" in d); })
+//     .selectAll('text.remark')
+//       .data(function (task) { 
+//           // Appends taskName to all songs.
+//           var songsOut = [];
+//           for (i = 0; i < task.songs.length; i++) {
+//             var song = task.songs[i]
+//             song.taskName = task.taskName
+//             songsOut.push(song)
+//           } 
+//           return songsOut; 
+//         })
+//       .enter()
+//       .append('text')
+//         .attr("class", "remark")
+//         .on("click", function(song) { play(song) })
+//         .attr('id', function(song) { return 'name' + song.title })
+//         .attr("transform", function(song) {
+//           dHor = x(song.taskName) + x.rangeBand()/2 - r
+//           dVer = y(song.date) - r
+//           return "translate(" + dHor + "," + dVer + ")"
+//         })
+//         .on({
+//           "mouseover": function(d) {
+//             d3.select(this).style("cursor", "pointer");
+//           },
+//           "mouseout": function(d) {
+//             d3.select(this).style("cursor", "default");
+//           }
+//         });
+// }
+
+function appendTaskNameToAll(taskName, elements) { 
+  var out = [];
+  for (i = 0; i < elements.length; i++) {
+    var element = elements[i]
+    element.taskName = taskName
+    out.push(element)
+  } 
+  return out; 
+}
+
 function generateSongIcons() {
   return d3.selectAll("g.era")
     .filter(function(d) { return ("songs" in d); })
     .selectAll('g.icon')
-      .data(function (task) { 
-          // Appends taskName to all songs.
-          var songsOut = [];
-          for (i = 0; i < task.songs.length; i++) {
-            var song = task.songs[i]
-            song.taskName = task.taskName
-            songsOut.push(song)
-          } 
-          return songsOut; 
+      .data(function (task) {
+          return appendTaskNameToAll(task.taskName, task.songs);
         })
       .enter()
       .append('g')
@@ -215,8 +254,10 @@ function addText(songIcons) {
         .attr("class", "title")
         .attr("x", r)
         .attr("y", function(text, i) { return 2.4*r + i*r*3.1/5; })
-        .attr("fill", "#333333")
+        .attr("fill", "#111111")
+        .attr("fill-opacity", 0.9)
         .attr("font-size", r * 2.6/5)
+        .attr("font-weight", "bold")
         .attr("alignment-baseline", "middle")
         .attr("text-anchor", "middle")
         .text(function(text) { return text; })

@@ -12,7 +12,11 @@ function example() {
                 "date": new Date(1945, 0, 0),
                 "year": 1945,
                 "text": ["Louis Jordan", "Caldonia"]}
-              ]},
+              ],
+     "remarks": [{"top": new Date(1922, 0, 0),
+                  "bottom": new Date(1945, 0, 0),
+                  "text": ["BOOGIE-WOOGIE", "BLUES", "COUNTRY", "SWING"]}
+                ]},
     {"startDate":new Date(1956, 0, 0), "endDate":new Date(1966, 0, 0),
      "taskName":"RnR", "status":"KILLED",
      "songs": [{"title":"rock_around_the_clock", 
