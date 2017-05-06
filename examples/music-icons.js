@@ -14,9 +14,13 @@ var NODE_GROWTH_RATE = 1
 var TRIANGLE_SIZE_FACTOR = 0.72
 var TRIANGLE_COLOR = "white"
 var BACKGROUND_COLOR = "black"
+
+// Opacities
 var TRIANGLE_FILL_OPACITY = 0.9 
-var BACKGROUND_OPACITY = 0.1
+var BACKGROUND_OPACITY = 0.32
 var BACKGROUND_OPACITY_PLAY = 0.22
+var YEAR_OPACITY = 0.9//0.85
+
 var OPACITY_FADE_TIME = 300
 var BKG_OPACITY_FADE_TIME = 400
 
@@ -144,16 +148,17 @@ function addPlayIcon(songIcons) {
 
 function showPlayIcon(id) {
   setPlayIconOpacity(id, TRIANGLE_FILL_OPACITY, BACKGROUND_OPACITY_PLAY, 
-                     OPACITY_FADE_TIME, BKG_OPACITY_FADE_TIME)
+                     OPACITY_FADE_TIME, BKG_OPACITY_FADE_TIME, 0.0, 
+                     BKG_OPACITY_FADE_TIME)
 }
 
 function hidePlayIcon(id) {
   setPlayIconOpacity(id, 0.0, BACKGROUND_OPACITY, OPACITY_FADE_TIME, 
-                     OPACITY_FADE_TIME)
+                     OPACITY_FADE_TIME, YEAR_OPACITY, 1.0)
 }
 
 function setPlayIconOpacity(id, opacity, backgroundOpacity, triangleFadeTime,
-                            bkgFadeTime) {
+                            bkgFadeTime, yearOpacity, yearFadeTime) {
   var songIcon = d3.selectAll('#name' + id)
   songIcon.select("path")
     .transition()
@@ -164,6 +169,11 @@ function setPlayIconOpacity(id, opacity, backgroundOpacity, triangleFadeTime,
     .transition()
     .duration(bkgFadeTime)
     .attr("fill-opacity", backgroundOpacity)
+
+  songIcon.select("text.year")
+    .transition()
+    .duration(yearFadeTime)
+    .attr("fill-opacity", yearOpacity)
 }
 
 function addYear(songIcons) {
@@ -173,13 +183,13 @@ function addYear(songIcons) {
       .attr("class", "year")
       .attr("x", r * 1.04)
       .attr("y", r * 1.09)
-      .attr("stroke", "#000000")
-      .attr("stroke-width", "0.2px")
-      .attr("stroke-opacity", 0.7)
-      .attr("stroke-linecap", "butt")
-      .attr("stroke-linejoin", "miter")
+      // .attr("stroke", "#000000")
+      // .attr("stroke-width", "0.2px")
+      // .attr("stroke-opacity", 0.7)
+      // .attr("stroke-linecap", "butt")
+      // .attr("stroke-linejoin", "miter")
       .attr("fill", 'white')
-      .attr("fill-opacity", 0.85)
+      .attr("fill-opacity", YEAR_OPACITY)
       .attr("font-size", r * 1.02)
       .attr("alignment-baseline", "middle")
       .attr("text-anchor", "middle")
