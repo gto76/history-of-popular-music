@@ -19,7 +19,7 @@ var BACKGROUND_COLOR = "black"
 var TRIANGLE_FILL_OPACITY = 0.9 
 var BACKGROUND_OPACITY = 0.32
 var BACKGROUND_OPACITY_PLAY = 0.22
-var YEAR_OPACITY = 0.9//0.85
+var YEAR_OPACITY = 0.88 //0.85
 
 var OPACITY_FADE_TIME = 300
 var BKG_OPACITY_FADE_TIME = 400
@@ -94,6 +94,14 @@ function generateSongIcons() {
           dVer = y(song.date) - r
           return "translate(" + dHor + "," + dVer + ")"
         })
+        .on({
+          "mouseover": function(d) {
+            d3.select(this).style("cursor", "pointer");
+          },
+          "mouseout": function(d) {
+            d3.select(this).style("cursor", "default");
+          }
+        });
 }
 
 function addClipPath(songIcons) {
@@ -113,7 +121,7 @@ function addImage(songIcons) {
         function(song) { return "../JamendoDataset/"+ song.title + ".jpg" })
     .attr("height", r * 2)
     .attr("width", r * 2)
-    .attr("clip-path", "url(#cut-off-bottom)")
+    .attr("clip-path", "url(#cut-off-bottom)");
 }
 
 function addPlayIcon(songIcons) {
@@ -138,23 +146,23 @@ function addPlayIcon(songIcons) {
     .attr("cy", r)
     .attr("r", r)
     .attr("fill", BACKGROUND_COLOR)
-    .attr("fill-opacity", BACKGROUND_OPACITY)
+    .attr("fill-opacity", BACKGROUND_OPACITY);
 
   var path = songIcons.append("path")
     .attr("d", lineFunction(triangle))
     .attr("fill-opacity", "0.0")
-    .attr("fill", TRIANGLE_COLOR)
+    .attr("fill", TRIANGLE_COLOR);
 }
 
 function showPlayIcon(id) {
   setPlayIconOpacity(id, TRIANGLE_FILL_OPACITY, BACKGROUND_OPACITY_PLAY, 
                      OPACITY_FADE_TIME, BKG_OPACITY_FADE_TIME, 0.0, 
-                     BKG_OPACITY_FADE_TIME)
+                     BKG_OPACITY_FADE_TIME);
 }
 
 function hidePlayIcon(id) {
   setPlayIconOpacity(id, 0.0, BACKGROUND_OPACITY, OPACITY_FADE_TIME, 
-                     OPACITY_FADE_TIME, YEAR_OPACITY, 1.0)
+                     OPACITY_FADE_TIME, YEAR_OPACITY, 1.0);
 }
 
 function setPlayIconOpacity(id, opacity, backgroundOpacity, triangleFadeTime,

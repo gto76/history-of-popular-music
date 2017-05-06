@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# Usage: convert-to-mp3 
+# Converts all wav files in folder to mp3, and removes -glued
+# from filename.
+
+# Stops execution if any command fails.
+set -eo pipefail
+
+main() {
+  for a in *.wav; do out=$(echo "$a" | sed 's/^.*freeze_//' | sed 's/\.wav/.mp3/'); ffmpeg -i "$a" "$out"; done
+}
+
+main "$@"
