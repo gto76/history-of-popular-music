@@ -166,7 +166,7 @@ function addImage(songIcons) {
     .attr("x", "0")
     .attr("y", "0")
     .attr("xlink:href", 
-        function(song) { return "../JamendoDataset/"+ song.title + ".jpg" })
+        function(song) { return "media/"+ song.title + ".jpg" })
     .attr("height", r * 2)
     .attr("width", r * 2)
     .attr("clip-path", "url(#cut-off-bottom)");
@@ -281,7 +281,7 @@ function generateAudioElement(id) {
   var audioElement = document.createElement("source");
 
   track.setAttribute("id", "audio"+id);
-  audioElement.setAttribute("src", "../JamendoDataset/"+id+".mp3");
+  audioElement.setAttribute("src", "media/"+id+".mp3");
 
   track.addEventListener('ended', function(e) {
     if (DEBUG) console.log("ENDED event "+this.id)
