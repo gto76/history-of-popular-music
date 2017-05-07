@@ -64,7 +64,7 @@ function main() {
   // Generates audio element for each songIcon.
   songIcons.each(function(song) { generateAudioElement(song.title); });
 
-  // addRemarks()
+  addRemarks()
 }
 
 
@@ -72,53 +72,52 @@ function main() {
 ///  SONG ICONS
 //
 
-// function addRemarks() {
-//   return d3.selectAll("g.era")
-//     .filter(function(d) { return ("remarks" in d); })
-//     .selectAll('text.remark')
-//       .data(function (task) { 
-//           // Appends taskName to all songs.
-//           var songsOut = [];
-//           for (i = 0; i < task.songs.length; i++) {
-//             var song = task.songs[i]
-//             song.taskName = task.taskName
-//             songsOut.push(song)
-//           } 
-//           return songsOut; 
-//         })
-//       .enter()
-//       .append('text')
-//         .attr("class", "remark")
-//         .on("click", function(song) { play(song) })
-//         .attr('id', function(song) { return 'name' + song.title })
-//         .attr("transform", function(song) {
-//           dHor = x(song.taskName) + x.rangeBand()/2 - r
-//           dVer = y(song.date) - r
-//           return "translate(" + dHor + "," + dVer + ")"
-//         })
-//         .on({
-//           "mouseover": function(d) {
-//             d3.select(this).style("cursor", "pointer");
-//           },
-//           "mouseout": function(d) {
-//             d3.select(this).style("cursor", "default");
-//           }
-//         });
-// }
-
-function appendTaskNameToAll(taskName, elements) { 
-  var out = [];
-  for (i = 0; i < elements.length; i++) {
-    var element = elements[i]
-    element.taskName = taskName
-    out.push(element)
-  } 
-  return out; 
+function addRemarks() {
+  d3.selectAll("g.era")
+    .filter(function(task) { return ("remarks" in task); })
+    .selectAll('text.remark')
+    .data(function (task) {
+        // task.remarks.forEach(function(remark) {
+        //   remark.lines.forEach(function(line) {
+        //     line.top = remark.top;
+        //     line.bottom = remark.bottom;
+        //     line.noOfLines = 4 //remark.lines.length
+        //   });
+        // });
+        var lines = []
+        for (i = 0; i < task.remarks.length; i++) {
+          var remark = task.remarks[i]
+          var noOfLines = remark.lines.length
+          var yTop = y(remark.top) + r * remark.topMargin
+          var yBottom = y(remark.bottom) - r * remark.bottomMargin
+          var yDelta = (yBottom - yTop) / (noOfLines + 1);
+          for (j = 0; j < noOfLines; j++) {
+            var line = remark.lines[j]
+            line.x = x(task.taskName) + x.rangeBand()/2
+            line.y = yTop + (j + 1) * yDelta;
+            console.log(line.y)
+            lines.push(line)
+          }
+        }
+        return lines;
+      })
+      .enter()
+      .append('text')
+        .attr("class", "remark")
+        .attr("x", function(line) { return line.x })
+        .attr("y", function(line, i) { return line.y; })
+        .attr("fill", "#111111")
+        .attr("fill-opacity", 0.9)
+        .attr("font-size", r * 2.9/5)
+        .attr("font-weight", "bold")
+        .attr("alignment-baseline", "middle")
+        .attr("text-anchor", "middle")
+        .text(function(line) { return line.text; })
 }
 
 function generateSongIcons() {
   return d3.selectAll("g.era")
-    .filter(function(d) { return ("songs" in d); })
+    .filter(function(task) { return ("songs" in task); })
     .selectAll('g.icon')
       .data(function (task) {
           return appendTaskNameToAll(task.taskName, task.songs);
@@ -141,6 +140,16 @@ function generateSongIcons() {
             d3.select(this).style("cursor", "default");
           }
         });
+}
+
+function appendTaskNameToAll(taskName, elements) { 
+  var out = [];
+  for (i = 0; i < elements.length; i++) {
+    var element = elements[i]
+    element.taskName = taskName
+    out.push(element)
+  } 
+  return out; 
 }
 
 function addClipPath(songIcons) {
@@ -242,7 +251,6 @@ function addYear(songIcons) {
       .attr("text-anchor", "middle")
       .text(function(song) { return String(song.year).substr(2,4) + "'"; })
 }
-
 
 function addText(songIcons) {
   songIcons
