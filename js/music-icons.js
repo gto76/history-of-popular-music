@@ -272,10 +272,10 @@ function generateAudioElement(id) {
   var audioElement = document.createElement("source");
 
   track.setAttribute("id", "audio"+id);
-  track.preload = "auto"
+  track.preload = "auto";
   audioElement.setAttribute("src", "media/"+id+".mp3");
-  audioElement.type = "audio/mpeg" 
-  audioElement.codecs = "mp3"
+  audioElement.setAttribute("type", "audio/mpeg");
+  audioElement.setAttribute("codecs", "mp3");
 
   track.addEventListener('ended', function(e) {
     if (DEBUG) console.log("ENDED event "+this.id)
