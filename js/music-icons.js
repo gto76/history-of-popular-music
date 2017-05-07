@@ -60,60 +60,16 @@ function main() {
   addPlayIcon(songIcons)
   addYear(songIcons)
   addText(songIcons)
+  addRemarks()
 
   // Generates audio element for each songIcon.
   songIcons.each(function(song) { generateAudioElement(song.title); });
-
-  addRemarks()
 }
 
 
 ////
 ///  SONG ICONS
 //
-
-function addRemarks() {
-  d3.selectAll("g.era")
-    .filter(function(task) { return ("remarks" in task); })
-    .selectAll('text.remark')
-    .data(function (task) {
-        // task.remarks.forEach(function(remark) {
-        //   remark.lines.forEach(function(line) {
-        //     line.top = remark.top;
-        //     line.bottom = remark.bottom;
-        //     line.noOfLines = 4 //remark.lines.length
-        //   });
-        // });
-        var lines = []
-        for (i = 0; i < task.remarks.length; i++) {
-          var remark = task.remarks[i]
-          var noOfLines = remark.lines.length
-          var yTop = y(remark.top) + r * remark.topMargin
-          var yBottom = y(remark.bottom) - r * remark.bottomMargin
-          var yDelta = (yBottom - yTop) / (noOfLines + 1);
-          for (j = 0; j < noOfLines; j++) {
-            var line = remark.lines[j]
-            line.x = x(task.taskName) + x.rangeBand()/2
-            line.y = yTop + (j + 1) * yDelta;
-            console.log(line.y)
-            lines.push(line)
-          }
-        }
-        return lines;
-      })
-      .enter()
-      .append('text')
-        .attr("class", "remark")
-        .attr("x", function(line) { return line.x })
-        .attr("y", function(line, i) { return line.y; })
-        .attr("fill", "#111111")
-        .attr("fill-opacity", 0.9)
-        .attr("font-size", r * 2.9/5)
-        .attr("font-weight", "bold")
-        .attr("alignment-baseline", "middle")
-        .attr("text-anchor", "middle")
-        .text(function(line) { return line.text; })
-}
 
 function generateSongIcons() {
   return d3.selectAll("g.era")
@@ -271,6 +227,41 @@ function addText(songIcons) {
         .text(function(text) { return text; })
 }
 
+function addRemarks() {
+  d3.selectAll("g.era")
+    .filter(function(task) { return ("remarks" in task); })
+    .selectAll('text.remark')
+    .data(function (task) {
+        var lines = []
+        for (i = 0; i < task.remarks.length; i++) {
+          var remark = task.remarks[i]
+          var noOfLines = remark.lines.length
+          var yTop = y(remark.top) + r * remark.topMargin
+          var yBottom = y(remark.bottom) - r * remark.bottomMargin
+          var yDelta = (yBottom - yTop) / (noOfLines + 1);
+          for (j = 0; j < noOfLines; j++) {
+            var line = remark.lines[j]
+            line.x = x(task.taskName) + x.rangeBand()/2
+            line.y = yTop + (j + 1) * yDelta;
+            lines.push(line)
+          }
+        }
+        return lines;
+      })
+      .enter()
+      .append('text')
+        .attr("class", "remark")
+        .attr("x", function(line) { return line.x })
+        .attr("y", function(line, i) { return line.y; })
+        .attr("fill", "#111111")
+        .attr("fill-opacity", 0.9)
+        .attr("font-size", r * 2.9/5)
+        .attr("font-weight", "bold")
+        .attr("alignment-baseline", "middle")
+        .attr("text-anchor", "middle")
+        .text(function(line) { return line.text; })
+}
+
 
 ////
 ///  AUDIO ELEMENTS
@@ -281,6 +272,7 @@ function generateAudioElement(id) {
   var audioElement = document.createElement("source");
 
   track.setAttribute("id", "audio"+id);
+  track.preload = "auto"
   audioElement.setAttribute("src", "media/"+id+".mp3");
 
   track.addEventListener('ended', function(e) {
