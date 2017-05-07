@@ -113,7 +113,7 @@ function example() {
                   "bottom": new Date(1978, 0, 0),
                   "topMargin": 3.9,
                   "bottomMargin": 2.5,
-                  "lines": [{"text": "RNB"}, {"text": "FUNK"}, {"text": "REGGAE"}, {"text": "DISCO"}]}
+                  "lines": [{"text": "R&B"}, {"text": "FUNK"}, {"text": "REGGAE"}, {"text": "DISCO"}]}
                 ]},
     {"startDate":new Date(1986, 0, 0), "endDate":new Date(1996, 0, 0), 
      "taskName":"Hip-Hop", "status":"KILLED",
