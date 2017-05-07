@@ -274,6 +274,8 @@ function generateAudioElement(id) {
   track.setAttribute("id", "audio"+id);
   track.preload = "auto"
   audioElement.setAttribute("src", "media/"+id+".mp3");
+  audioElement.type = "audio/mpeg" 
+  audioElement.codecs = "mp3"
 
   track.addEventListener('ended', function(e) {
     if (DEBUG) console.log("ENDED event "+this.id)
