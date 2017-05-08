@@ -77,45 +77,47 @@ LCD: Being burdened by touring and thoughts of quiting and how to end it all, do
 Lamar: More burdened by religion/family
 Waits: What was he doing from 88 to 92?
 
-So it's not like it's directly their fault, but more that they disheartened not only themselves, by creating the artworks that were bigger than themselves, but they (probably) dishartended also other artists, giving them something to aprite to, but with no clear direction forward (tipping point?)
+So it's not like it's directly their fault, but more that they disheartened not only themselves, by creating the artworks that were bigger than themselves, but they (probably) disheartened also other artists, giving them something to aspire to, but with no clear direction forward (tipping point?)
 
-Also it has to be mentioned that all this legendary works were a colaboration of many brilliand minds that enabled to bring out the best from the artists...
+Also it has to be mentioned that all this legendary works were a collaboration of many brilliant minds that enabled to bring out the best from the artists...
 
-In Tom Waits case, firt there was his wife that was (probably) a major influence on him to abondon his old "crying in the beer" persona and started a more csmopolitan/gipsy and weird (sinister) character. (Also his ecouraging split [but also producers ability to let waits expereiment with different aproaches] with his former producer with whom he recorded his first ? albums probably helped) Of course here were then the extraordinary musicians well versed in experimentation...
+In Tom Waits case, first there was his wife that was (probably) a major influence on him to abandon his old "crying in the beer" persona and started a more cosmopolitan/gypsy and weird (sinister) character. (Also his encouraging split [but also producers ability to let waits experiment with different approaches] with his former producer with whom he recorded his first ? albums probably helped) Of course here were then the extraordinary musicians well versed in experimentation...
 
-As for Beck there was an unbeliaveble "click" with dust brothers, legendary duo of producers and sampling gurus, who are responsible for Beastie boys boutique, and whos intentionaly added crackling noises are probably their most recognizable contribution to hip hop. (signature sound)
+As for Beck there was an unbelievable "click" with dust brothers, legendary duo of producers and sampling gurus, who are responsible for Beastie boys boutique, and who's intentionally added crackling noises are probably their most recognizable contribution to hip hop. (signature sound)
 
-As for LCD Soundsystem it is preety clear that he would have a great difficulty realising his ideas on Sound of silver... Ideas feel so organic/lively and jammy, that it feels it would be impossible to realize them to such "standing/solidity" withouth a band (with only season musicians).
+As for LCD Soundsystem it is pretty clear that he would have a great difficulty realizing his ideas on Sound of silver... Ideas feel so organic/lively and jammy, that it feels it would be impossible to realize them to such "standing/solidity" without a band (with only season musicians).
 
-And of course Lamars Butterly, what more could be said... The amount of exceptional musicains and producers that had to work their asses of to make a record so perfectly produced, but that on no moment sound overproduced...
+And of course Lamar's Butterfly, what more could be said... The amount of exceptional musicians and producers that had to work their asses of to make a record so perfectly produced, but that on no moment sound overproduced...
 
 * Champagne analogy, three parts:
 		singles [][][]
 	A. Opening
 		timeline [   ]
-	B. Staleness: It just stands there, noone is ready to take it into the kitchen, yet almost noone wants to drink it anymore
+	B. Staleness: It just stands there, none is ready to take it into the kitchen, yet almost none wants to drink it anymore
 		albums [][][]
 	C. Morning after
-	D. Baloon bursting ?
+	D. Balloon bursting ?
 		next albums [][][] ?
 
 Morning after:
-We can actually enjoy the chapagne with clearer view and enjoy it for its taste... and find the right combination of acompanianing snacks, from the array of leftovers, ..
+We can actually enjoy the champagne with clearer view and enjoy it for its taste... and find the right combination of accompanying snacks, from the array of leftovers, ..
 
-Of course after that it / or when the next thing comes we look at the mess and see basicaly garbage, that needs to be taken out. What were left with is only knowledge of how different brands really taste, so we can buy them in a future for different settings and combinations.
+Of course after that it / or when the next thing comes we look at the mess and see basically garbage, that needs to be taken out. What were left with is only knowledge of how different brands really taste, so we can buy them in a future for different settings and combinations.
 
-Realisation that, that is something you almost never have at home, and it would probably make sense to give it another try. Of course this time in a way and with combination of foods, that really suits you, and not as on party, ones that were available to everyone at the moment.
+Realization that, that is something you almost never have at home, and it would probably make sense to give it another try. Of course this time in a way and with combination of foods, that really suits you, and not as on party, ones that were available to everyone at the moment.
 
-* Waits > Ali niso komadi, kot naprimer 1.Lie to me iz brawlers bol al man skoraj enaki komadom iz bi time ere?
-
-As for conclusion, I must say, that I find it hard to believe that hip hop has died in 2017. Maybe hip-hop as we know it died, but a new kind of hip-hop, musicaly much more daring and vibrant has just been born, and Lamars single Be hubmle might just be the big break of this new kind of hip-hop, that was slowly fermenting during last 10 years.
+As for conclusion, I must say, that I find it hard to believe that hip hop has died in 2017. Maybe hip-hop as we know it died, but a new kind of hip-hop, musically much more daring and vibrant has just been born, and Lamar's single Be humble might just be the big break of this new kind of hip-hop, that was slowly fermenting during last 10 years.
 
 
 
+
+
+
+-----------------
 
 * punk > 06 (joy division)
 * rnr > ramones
-
+* Waits > Ali niso komadi, kot naprimer 1.Lie to me iz brawlers bol al man skoraj enaki komadom iz bi time ere?
 
 -----------------
 
