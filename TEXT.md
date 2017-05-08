@@ -66,7 +66,7 @@ ALBUMS [] [] [] []
 
 * RNB/ROCKABILY: Not counterpart but rockabily played by bl. musicians, or maybe: The same music as rockabilly, but played by bl. musicians.
 
-* Describe how this are high ganras, that incorporate many small ones (ska, dub, ...)
+* Describe how this are high ganras, that incorporate many small ones (ska, dub/ Metal > rock,...)
 
 * Beck/Tom: Tipping point of where a ganra can be streached (so that definition still has some cind of coherency), and before the bubble bursts (the wave breaks), and we're left with broken fragments, up for grabs for everyone...
 
@@ -108,12 +108,13 @@ Realisation that, that is something you almost never have at home, and it would 
 
 * Waits > Ali niso komadi, kot naprimer 1.Lie to me iz brawlers bol al man skoraj enaki komadom iz bi time ere?
 
+As for conclusion, I must say, that I find it hard to believe that hip hop has died in 2017. Maybe hip-hop as we know it died, but a new kind of hip-hop, musicaly much more daring and vibrant has just been born, and Lamars single Be hubmle might just be the big break of this new kind of hip-hop, that was slowly fermenting during last 10 years.
 
 
 
 
-
-
+* punk > 06 (joy division)
+* rnr > ramones
 
 
 -----------------
