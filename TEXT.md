@@ -4,16 +4,17 @@ Did Lamar just kill Hip Hop?
 
 
 [DAMN.](images/damn.jpg)
-[graph](images/graph.png)
-[covers](images/covers.png)
+[chart](images/chart.png)
 [singles](images/singles.png)
+[albums](images/albums.png)
+
 
 Ok, hold your horses. Just let me explain the theory and then judge.
 
 
 Life Expectancy of a Genre
 --------------------------
-So according to the theory, every major popular music genre has roughly 30 years until it's done. Done in a sense that after that nothing can change our perception of what a genre is and what it should sound like [expectations of what a genre should sound like]. [*People are of course still using elements from dead genres and incorporate them in music, but that propagates their genre, but has no effect on our definition and perception of the dead genre > Or they are just in post era.]
+So according to my theory, every major popular music genre has roughly 30 years until it's done. Done in a sense that after that nothing can change our perception of what a genre is and what it should sound like [expectations of what a genre should sound like]. [*People are of course still using elements from dead genres and incorporate them in music, but that propagates their genre, but has no effect on our definition and perception of the dead genre > Or they are just in post era.]
 
 
 Three Periods in Life of a Genre
@@ -44,7 +45,7 @@ Selection of Genre Defining Singles
 -----------------------------------
 So as with rock and roll, every major genre that preceded (succeeded?) it started with a hit single, that basically defined it, and so it happens that this singles were following each other in intervals of roughly 10 years. The other singles being "Satisfaction" by Rolling stones for rock, "Blietzkrieg Bop" by Ramones for punk, "Walk this way" by RUN DMC (in collaboration with Aerosmith) for Hip-hop and "Groove is in the hearth" by "?" for EDM (electronic dance music).
 
-For rock other candidates could be earlier single "?" by Kinks if one would want to include the whole British garage rock scene under rock or maybe some later single that was not anymore in style of garage rock like "?" by Doors. The significance of Blitzkrieg Bop and the whole Ramones debut album in general for punk can hardly be disputed, only thing one could hold against it, is that it wasn't really a hit single, and one could argue that the "Anarchy in the UK" or "God save the queen" from later that year are a better fit for a breakthrough single. As for hip-hop i think walk this way is a good fit, although it could be argued, that it was still a old-school style hip-hop, and some other artists from next two years, like Ice-T or Public Enemy better signify the hip-hops step into golden age. Nonetheless, none of them had such a big hit as RUN DMC had.
+For rock other candidates could be earlier single "?" by Kinks if one would want to include the whole British garage rock scene under rock or maybe some later single that was not anymore in style of garage rock like "?" by Doors. The significance of Blitzkrieg Bop and the whole Ramones debut album in general for punk can hardly be disputed, only thing one could hold against it, is that it wasn't really a hit single, and one could argue that the "Anarchy in the UK" or "God save the queen" from later that year are a better fit for a breakthrough single. As for hip-hop i think walk this way is a good fit, although it could be argued, that it was still a old-school style hip-hop, and some other artists from next two years, like N.W.A. or Public Enemy better signify the hip-hops step into golden age. Nonetheless, none of them had such a big hit as RUN DMC had.
 For EDM, if we define it as an electronic dance music that can be listened to sitting down, the commercial success of Prodigy's "Fat Of The land" must be the big breakthrough moment.
 
 
