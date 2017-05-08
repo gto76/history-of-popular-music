@@ -43,18 +43,26 @@ So how come this eras coincide so neatly, (one might ask). It defenatly seams to
 So only inconsistency on the timeline left is a lack of emergance of new major ganra around year 2006. There are two possible explanations. First one is that we can adequatly clasify popular music only in retrospective, and so are lacking the prespective, that will alow us to fully understand what is currently happening in music. But this explanation just feals insuficient if we take in consideration what a huge stirs rock and roll and rock created in their first years, how distinctive punk was from the rock of its era, and the hard separation of Hiphop from other ganras by simple fact that the lyrics are being raped. In this case probably the more pessimistic option is true, namely that there are no new major ganras because the music industry as we kenw it pretty much died, by the 2006, when it was time for next big thing. (...because the music industry was already in such a bad shape by the 2006, that it wasn't able to procreate and push out the next big thing).
 
 
-
-
-
-
-
-
-
-
-
 [singles](images/singles.png)
 
+--------------------
 
+- EDM -> Sitting down (can mantain our focus)
+- So let's start (at a less contraversial claim, and more easily verifaiable claim...) at the beggining and see how ganras are born.
+  |-> Breaktrought singles
+
+They propel ganra from a proto phase (in which it is slowly maturing/developing/brewing/fermenting) to a golden age.
+
+The cork (is) gets open with a lowd pop, graping everyones atention and champagne gets sprinkled all around and everybody is gathered around, wants a glass. Continuing with this analogy, of course no one is intereted anymore in the same champagne once the bubles settle (in) it gets kind of worm and sticky, and everyone either leaves the party, switches back to what they were drinking before, or starts doing drugs. Folowing this analogy, the revival of a ganra could be the morning after, when you wake up and open the fridge, and see the fancy and re-refregerated leftovers from the party and realize that they are actualy better than what you usaly have in the fridge and you start to (pick the interesting ones) concume them in a strange combinations and throw the bad ones out.
+
+LAMAR []
+
+SINGLES [] [] [] [] []
+
+TIMELINE [     ]
+
+ALBUMS [] [] [] []
+   > So what constitutes the death of a ganra?
 
 
 
