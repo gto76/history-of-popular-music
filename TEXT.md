@@ -64,8 +64,49 @@ TIMELINE [     ]
 ALBUMS [] [] [] []
    > So what constitutes the death of a ganra?
 
+* RNB/ROCKABILY: Not counterpart but rockabily played by bl. musicians, or maybe: The same music as rockabilly, but played by bl. musicians.
 
+* Describe how this are high ganras, that incorporate many small ones (ska, dub, ...)
 
+* Beck/Tom: Tipping point of where a ganra can be streached (so that definition still has some cind of coherency), and before the bubble bursts (the wave breaks), and we're left with broken fragments, up for grabs for everyone...
+
+* Butterfly: Poetry...., Basicaly the whole abum gives you a feeling like you are watching some messed up sf/thriller/horror/comedy/psycho drama/fantasy by linch.
+
+Beck: Ending relationship/depresion, scientology
+LCD: Being budened by touring and thoughts of quiting and how to end it all, documentary/madison square garden (comercialism?)
+Lamar: More burduned by relegion/family
+Waits: What was he doing from 88 to 92?
+
+So it's not like it's directly their fault, but more that they dishartened not only themselves, by creating the artworks that were bigger than themselves, but they (probably) dishartended also other artists, giving them something to aprite to, but with no clear direction forward (tipping point?)
+
+Also it has to be mentioned that all this legendary works were a colaboration of many brilliand minds that enabled to bring out the best from the artists...
+
+In Tom Waits case, firt there was his wife that was (probably) a major influence on him to abondon his old "crying in the beer" persona and started a more csmopolitan/gipsy and weird (sinister) character. (Also his ecouraging split [but also producers ability to let waits expereiment with different aproaches] with his former producer with whom he recorded his first ? albums probably helped) Of course here were then the extraordinary musicians well versed in experimentation...
+
+As for Beck there was an unbeliaveble "click" with dust brothers, legendary duo of producers and sampling gurus, who are responsible for Beastie boys boutique, and whos intentionaly added crackling noises are probably their most recognizable contribution to hip hop. (signature sound)
+
+As for LCD Soundsystem it is preety clear that he would have a great difficulty realising his ideas on Sound of silver... Ideas feel so organic/lively and jammy, that it feels it would be impossible to realize them to such "standing/solidity" withouth a band (with only season musicians).
+
+And of course Lamars Butterly, what more could be said... The amount of exceptional musicains and producers that had to work their asses of to make a record so perfectly produced, but that on no moment sound overproduced...
+
+* Champagne analogy, three parts:
+		singles [][][]
+	A. Opening
+		timeline [   ]
+	B. Staleness: It just stands there, noone is ready to take it into the kitchen, yet almost noone wants to drink it anymore
+		albums [][][]
+	C. Morning after
+	D. Baloon bursting ?
+		next albums [][][] ?
+
+Morning after:
+We can actually enjoy the chapagne with clearer view and enjoy it for its taste... and find the right combination of acompanianing snacks, from the array of leftovers, ..
+
+Of course after that it / or when the next thing comes we look at the mess and see basicaly garbage, that needs to be taken out. What were left with is only knowledge of how different brands really taste, so we can buy them in a future for different settings and combinations.
+
+Realisation that, that is something you almost never have at home, and it would probably make sense to give it another try. Of course this time in a way and with combination of foods, that really suits you, and not as on party, ones that were available to everyone at the moment.
+
+* Waits > Ali niso komadi, kot naprimer 1.Lie to me iz brawlers bol al man skoraj enaki komadom iz bi time ere?
 
 
 
