@@ -181,6 +181,13 @@ body > pre {
   margin: 0px;
 }
 
+.single_cover {
+  width: 143px;
+  height: 143px;
+  border: 0px;
+  margin: 0px;
+}
+
 svg {
   font: 10px sans-serif;
 }
