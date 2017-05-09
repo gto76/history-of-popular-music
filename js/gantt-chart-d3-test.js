@@ -11,9 +11,9 @@ d3.gantt = function() {
   
   var margin = {
     top : 20,
-    right : 40,
+    right : 0,
     bottom : 20,
-    left : 150
+    left : 30
   };
 
   var selector = 'body';
@@ -23,7 +23,7 @@ d3.gantt = function() {
   var taskTypes = [];
   var taskStatus = [];
   var height = 900 //document.body.clientHeight - margin.top - margin.bottom-5;
-  var width = 1000 //document.body.clientWidth - margin.right - margin.left-5;
+  var width = 840 //document.body.clientWidth - margin.right - margin.left-5;
 
   var tickFormat = "%H:%M";
 
