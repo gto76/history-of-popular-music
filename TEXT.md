@@ -4,9 +4,6 @@ Did Lamar just kill Hip Hop?
 
 
 [DAMN.](images/damn.jpg)
-[chart](images/chart.png)
-[singles](images/singles.png)
-[albums](images/albums.png)
 
 
 Ok, hold your horses. Just let me explain the theory and then judge.
@@ -16,11 +13,13 @@ Life Expectancy of a Genre
 --------------------------
 So according to my theory, every major popular music genre has roughly 30 years until it's done. Done in a sense that after that nothing can change our perception of what a genre is and what it should sound like [expectations of what a genre should sound like]. [*People are of course still using elements from dead genres and incorporate them in music, but that propagates their genre, but has no effect on our definition and perception of the dead genre > Or they are just in post era.]
 
+[chart](images/chart.png)
 
 Three Periods in Life of a Genre
 --------------------------------
 [As seen on the graph] Every genre starts with a proto era (green area), in which it is slowly and gradually developing. Then comes the breakthrough single, which (starts the craze/puts it in a spotlight) puts it on a map and draws the attention of listeners, artists and music business alike. This is the start of the genre's golden age which lasts roughly 10 years, and also a moment in which the clock starts ticking. Then follows 10 years of crisis in which two other genres steel the focus. In second half of the crisis era, there emerges one sub-genre, that brings out the worst of the genre, examples of which are glam rock, hair metal, skate punk, bling rap and brostep. Crisis ends with a revival of a genre that usually consists of many new and diverse sub-genres. And now comes my [controversial?] claim, that the death of a genre happens between two albums made by an exceptional artist. One a masterpiece, that the artist is never again able to surpass, although he produces many more great albums, and the other the album after that. The masterpiece album rises expectations and appetites of many and the future of the genre seems bright, while actually it stands on it's last legs (it's on it's last breath).
 
+[albums](images/albums.png)
 
 Chosen Prominent Artists
 ------------------------
@@ -40,6 +39,7 @@ Another curiosity is quantity of genres crammed in rock and roll before it's bre
 
 Main reasons for the big break that happened in 56 is the merging of black and country markets (and also singles/albums). Before that almost no white people were buying black music and vice versa. This, together with a shorter time that was needed from recording session to release of a single, contributed to more fluid progression of a style, that became known as rock and roll.
 
+[singles](images/singles.png)
 
 Selection of Genre Defining Singles
 -----------------------------------
@@ -63,6 +63,10 @@ No New Genre in 2006
 --------------------
 So only inconsistency on the timeline left is a lack of emergence of new major genre around year 2006. There are two possible explanations. First one is that we can adequately classify popular music only in retrospective, and so are lacking the perspective, that will allow us to fully understand what is currently happening in music. But this explanation just feels insufficient if we take in consideration what a huge stirs rock and roll and rock created in their first years, how distinctive punk was from the rock of its era, and the hard separation of Hip-hop from other genres by simple fact that the lyrics are being raped. In this case probably the more pessimistic option is true, namely that there are no new major genres because the music industry as we knew it pretty much died, by the 2006, when it was time for next big thing. (...because the music industry was already in such a bad shape by the 2006, that it wasn't able to procreate and push out the next big thing).
 
+
+Conclusion
+----------
+As for conclusion, I must say, that I find it hard to believe that hip hop has died in 2017. Maybe hip-hop as we know it died, but a new kind of hip-hop, musically much more daring and vibrant has just been born, and Lamar's single Be humble might just be the big break of this new kind of hip-hop, that was slowly fermenting during last 10 years.
 
 ======================================
 
@@ -126,10 +130,6 @@ As for LCD Soundsystem it is pretty clear that he would have a great difficulty 
 
 And of course Lamar's Butterfly, what more could be said... The amount of exceptional musicians and producers that had to work their asses of to make a record so perfectly produced, but that on no moment sound overproduced...
 
-
-Conclusion
-----------
-As for conclusion, I must say, that I find it hard to believe that hip hop has died in 2017. Maybe hip-hop as we know it died, but a new kind of hip-hop, musically much more daring and vibrant has just been born, and Lamar's single Be humble might just be the big break of this new kind of hip-hop, that was slowly fermenting during last 10 years.
 
 
 
