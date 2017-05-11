@@ -16,10 +16,10 @@ As shown on the chart, every genre starts with a proto era (green area), in whic
 
 And now comes a more controversial claim, that the death of a genre happens between two albums, made by an exceptional artist. One a masterpiece, that the artist is never again able to surpass, although he produces many more great albums, and the other the album after that. The masterpiece album rises expectations and appetites of many and the future of the genre seems bright, while actually it is standing on it's last legs.
 
-![Big Time](images/big_time.png)
-![Odeley](images/odelay_cover.png)
-![Sound of silver](images/sound_of_silver.png)
-![To pimp a butterfly](images/to_pimp_a_butterfly.png)
+![Big Time](images/big_time.jpg)
+![Odeley](images/odelay_cover.jpg)
+![Sound of silver](images/sound_of_silver.jpg)
+![To pimp a butterfly](images/to_pimp_a_butterfly.jpg)
 
 Another thing that might be controversial in this theory, besides the selection of the "chosen ones", are the genres they are associated with. But anyways, lets list them, namely Tom Waits with Rock and roll, Beck with Rock, LCD Soundsystem with Punk and Kendrick Lamar with Hip-hop. Lamar is probably the least controversial choice among them, simply because he's a rapper, but still — if we look at the music on the Pimp a Butterfly, it's a mix of many diverse genres and sounds, everything from funk to jazz and that's something that is common to all chosen legendary albums. Specifically — Tom Waits' Big Time, a collection of live recordings of songs from his last three albums, could be described as anything from blues, gypsy music, ballads, blues rock and cabaret... Beck's Odelay could be described as a mixture of old-school hip hop, delta blues, country, grunge and noise. LCD Soundsystem's Sound of Silver contains mixture of electronica, funk, new wave, post-punk and Bowie's sound.
 
@@ -66,7 +66,7 @@ So only inconsistency on the timeline left is a lack of emergence of a new major
 Conclusion
 ----------
 
-![Be humble](images/be_hubmble_square.png)
+![Be humble](images/be_humble_square.png)
 
 As for conclusion, I must say, that I find it hard to believe that hip hop has died in 2017. Maybe hip hop as we know it died, but a new kind of hip hop, musically much more daring and vibrant has just been born, and Lamar's single "Be Humble" might just be the big breakthrough of this new kind of hip hop, that was slowly fermenting during last 10 years.
 
