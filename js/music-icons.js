@@ -81,7 +81,11 @@ function generateSongIcons() {
       .enter()
       .append('g')
         .attr("class", "icon")
-        .on("click", function(song) { play(song) })
+        .on("click", function(song) { 
+          play(song)
+          var tooltip = d3.select("#tooltip")
+          animate(tooltip, 15, 100, 1, 0)
+        })
         .attr('id', function(song) { return 'name' + song.title })
         .attr("transform", function(song) {
           dHor = x(song.taskName) + x.rangeBand()/2 - r
@@ -97,6 +101,14 @@ function generateSongIcons() {
           }
         });
 }
+
+function animate(group, delay, duration, scale, opacity) {
+  group.transition()
+       .delay(delay)
+       .duration(duration)
+       // .attr("transform", "scale("+String(scale)+")")
+       .style('opacity', opacity);
+}  
 
 function appendTaskNameToAll(taskName, elements) { 
   var out = [];

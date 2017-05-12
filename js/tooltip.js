@@ -12,12 +12,16 @@ function main() {
   var TEXT_INFO_2 = "play audio sample."
   var TEXT_CONFIRM = "GOT IT"
 
+  var DISAPPEAR_DELAY = 15
+  var DISAPPEAR_DURATION = 100
+
   var mardiGras = d3.select('#namemardi_gras_in_new_orleans')
   var x = d3.transform(mardiGras.attr("transform")).translate[0] + 2.46*r
   var y = d3.transform(mardiGras.attr("transform")).translate[1] + r * 0.9;
 
   var group = d3.select('svg')
       .append('g')
+      .attr("id", "tooltip")
       .attr("transform", "translate("+x+", "+y+")")
 
   group.append('polygon')
@@ -65,7 +69,9 @@ function main() {
       .attr("alignment-baseline", "middle")
       .attr("text-anchor", "end")
       .text(TEXT_CONFIRM)
-      .on("click", function(song) { group.attr("visibility", "hidden") })
+      .on("click", function(song) {  
+          animateGroup()
+        })
       .on({
         "mouseover": function(d) {
           d3.select(this).style("cursor", "pointer");
@@ -74,6 +80,18 @@ function main() {
           d3.select(this).style("cursor", "default");
         }
       });
+
+  function animateGroup() {
+    animate(group, DISAPPEAR_DELAY, DISAPPEAR_DURATION, 1, 0)
+  }
+
+  function animate(group, delay, duration, scale, opacity) {
+    group.transition()
+         .delay(delay)
+         .duration(duration)
+         // .attr("transform", "scale("+String(scale)+")")
+         .style('opacity', opacity);
+  }    
 
 }
 
