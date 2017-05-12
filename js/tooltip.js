@@ -24,11 +24,14 @@ function main() {
       .attr("id", "tooltip")
       .attr("transform", "translate("+x+", "+y+")")
 
-  group.append('polygon')
-      .attr("class", "bkgrnd")
-      .attr("points", "0,0 "+-(TRIANGLE_WIDTH/2)+","+-(TRIANGLE_HEIGHT+0.1)+" "+(TRIANGLE_WIDTH/2)+","+-(TRIANGLE_HEIGHT+0.1))
+  var clipPath = group.append("clipPath")
+      .attr("id", "cut-off-tooltip")
 
-  group.append('rect')
+  clipPath.append('polygon')
+      .attr("class", "bkgrnd")
+      .attr("points", "0,0 "+-(TRIANGLE_WIDTH/2)+","+-(TRIANGLE_HEIGHT+1)+" "+(TRIANGLE_WIDTH/2)+","+-(TRIANGLE_HEIGHT+1))
+
+  clipPath.append('rect')
       .attr("class", "bkgrnd")
       .attr("rx", ROUNDNES)
       .attr("ry", ROUNDNES)
@@ -36,6 +39,15 @@ function main() {
       .attr("y", -(RECT_HEIGHT+TRIANGLE_HEIGHT))
       .attr("height", RECT_HEIGHT)
       .attr("width", RECT_WIDTH)
+
+  group.append('rect')
+      .attr("class", "bkgrnd")
+      .attr("x", -(RECT_WIDTH/2))
+      .attr("y", -(RECT_HEIGHT+TRIANGLE_HEIGHT))
+      .attr("height", RECT_HEIGHT+TRIANGLE_HEIGHT)
+      .attr("width", RECT_WIDTH+TRIANGLE_WIDTH)
+      .attr("clip-path", "url(#cut-off-tooltip)");
+
 
   group.append("text")
       .attr("class", "temp-text")
