@@ -193,14 +193,14 @@ function addYear(songIcons) {
     .filter(function(song) { return ("year" in song); })
     .append("text")
       .attr("class", "year")
-      .attr("x", r * 1.04)
+      .attr("x", r * 0.93)
       .attr("y", r * 1.09)
       .attr("fill", 'white')
       .attr("fill-opacity", YEAR_OPACITY)
       .attr("font-size", r * 1.02)
       .attr("alignment-baseline", "middle")
       .attr("text-anchor", "middle")
-      .text(function(song) { return String(song.year).substr(2,4) + "'"; })
+      .text(function(song) { return "'" + String(song.year).substr(2,4); })
 }
 
 function addText(songIcons) {
