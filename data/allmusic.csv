@@ -1,35 +1,36 @@
-# Number of albums with 4 stars or more.
+# Number of main albums with 4 stars or more.
 # Rereleases, anthologies and new releases of old live material are not counted.
 # Which sub-genres (styles) were selected for each genre.
-# Punk: punk, punk/new wave
+# Punk: punk, punk/new wave (also compilations and soundtracks with new material were counted > they are not counted in other genres)
+# Hip-hop: all Rap styles
 
-year;punk;
-1970;2;
-1971;1;
-1972;1;
-1973;2;
-1974;3;
-1975;4;
-1976;10;
-1977;45;
-1978;82;
-1979;103;
-1980;121;
-1981;113;
-1982;104;
-1983;98;
-1984;80;
-1985;60;
-1986;40;
-1987;42;
-1988;37;
-1989;36;
-1990;30;
-1991;24;
-1992;28;
-1993;24;
-1994;30;
-1995;49;
+year;punk;hip-hop;
+1970;2;1
+1971;1;1
+1972;1;0
+1973;2;0
+1974;3;1
+1975;4;0
+1976;10;2
+1977;45;1
+1978;82;0
+1979;103;0
+1980;121;3
+1981;113;2
+1982;104;4
+1983;98;1
+1984;80;5
+1985;60;4
+1986;40;11
+1987;42;12
+1988;37;32
+1989;36;34
+1990;30;47
+1991;24;58
+1992;28;57
+1993;24;41
+1994;30;58
+1995;49;-22
 1996;39;
 1997;45;
 1998;48;
